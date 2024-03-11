@@ -1,0 +1,347 @@
+@import url('https://fonts.cdnfonts.com/css/effra-heavy');
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #0000A8;
+    --body-color: #fff;
+    --before-main: #e1e1ff;
+}
+
+body {
+    background: var(--body-color);
+    font-family: 'Effra Medium', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: auto;
+    background-color: var(--before-main);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 25%;
+    padding: 0;
+    /* background-color: #0000A8; */
+}
+
+.logo a img {
+    width: 90%;
+    padding-left: 25%;
+}
+
+.menu_list {
+    width: 60%;
+    padding-right: 10%;
+    /* background: red; */
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 60px;
+}
+
+.searchbar {
+    width: 30%;
+}
+
+.searchbar form div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #0000A8;
+    padding: 3px;
+    border-radius: 7px;
+    height: 35px;
+    width: 250px;
+}
+
+.searchbar form div .input {
+    background: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    padding-left: 10px;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.searchbar form div button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 12pt;
+    padding-right: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--main);
+    margin: 0px 10px 0px 0px;
+    padding-left: 0px;
+}
+
+.mobile_list {
+    display: none;
+}
+
+.menu_button {
+    display: none;
+}
+
+.menu_button button {
+    border: none;
+    background: none;
+}
+
+@media only screen and (max-width: 720px)
+{
+    .navbar {
+        z-index: 1 !important;
+        position: fixed;
+    }
+
+    .searchbar{
+        display: none;
+    }
+
+    .searchbar_mobile {
+        margin-top: 40px;
+    }
+
+    .searchbar_mobile form div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: #fff;
+        padding: 3px;
+        border-radius: 7px;
+        height: 35px;
+        width: 250px;
+    }
+    
+    .searchbar_mobile form div .input {
+        background: none;
+        border: none;
+        width: 100%;
+        color: var(--main);
+        outline: none;
+        padding-left: 10px;
+        font-size: 12pt;
+    }
+    
+    ::placeholder {
+        color: var(--before-main);
+    }
+    
+    .searchbar_mobile form div button {
+        background: none;
+        border: none;
+        color: var(--main);
+        font-size: 12pt;
+        padding-right: 10px;
+    }
+
+    .menu_button {
+        display: block;
+    }
+
+    .logo {
+        width: 100%;
+        padding: 0;
+    }
+
+    .logo a img {
+        width: 50%;
+        padding-left: 5%;
+    }
+
+    .menu_list{
+        display: none;
+    }
+    
+    .mobile_list {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        padding-top: 70px;
+        padding-bottom: 70px;
+        background-color: var(--main);
+    }
+    
+    .mobile_list li {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 0px;
+    }
+    
+    .mobile_list li a {
+        color: #fff;
+        margin-top: 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    li a {
+        margin: 0;
+    }
+}
+
+.backdrop video {
+    width: 100%;
+    height: fit-content;
+    padding-top: 65px;
+}
+
+.explore_prop {
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-color);
+    padding-bottom: 70px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore_prop .title {
+    text-align: center;
+}
+
+.explore_prop .title h3 {
+    font-family: 'Effra Heavy', sans-serif;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    font-size: 30pt;
+    color: var(--main);
+}
+
+.products {
+    width: 84%;
+    margin-left: 8%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.eachproduct {
+    width: 31%;
+    height: 250px;
+    background-color: var(--main);
+    border-radius: 7px;
+    margin: 10px;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    transition: .6s;
+}
+
+.eachproduct .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #0000008f;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    transition: .6s;
+}
+
+.eachproduct a {
+    text-decoration: none;
+}
+
+.eachproduct .overlay p {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18pt;
+}
+
+.eachproduct:hover {
+    scale: 105%;
+}
+
+.eachproduct .overlay:hover{
+    background-color: #00000075;
+}
+
+@media only screen and (max-width: 720px) {
+    .products {
+        flex-direction: column;
+        padding-top: 40px;
+    }
+
+    .explore_prop .title h3 {
+        padding-top: 40px;
+    }
+
+    .eachproduct {
+        width: 100%;
+        margin: 0px 0px 25px 0px;
+        height: 200px;
+    }
+}
+
+.client_bg {
+    background: url(../images/Group-72.png);
+    background-color: var(--before-main);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:105%;
+}
+
+.each_client {
+    height: 130px;
+    background: none;
+    background: none;
+    border: 1px solid #0000001a;
+}
+
+.each_client .overlay {
+    background: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.each_client .overlay:hover {
+    background: none;
+}
+
+.each_client:hover{
+    background-color: none;
+    scale: 100%;
+}
+
+.each_client .overlay img {
+    width: 45%;
+    margin: 0 !important;
+    padding: 0;
+}
