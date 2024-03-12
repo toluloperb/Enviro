@@ -765,7 +765,6 @@ hr {
 }
 
 .eachchat_cs {
-    max-width: 70%;
     width: auto;
     height: auto;
     background: var(--main);
