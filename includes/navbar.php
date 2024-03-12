@@ -1,14 +1,14 @@
 <section class="navbar">
     <div class="logo">
-        <a href=""><img src="assets/images/manor-logo.png" alt=""></a>
+        <a href="index"><img src="assets/images/manor-logo.png" alt=""></a>
     </div>
 
     <div class="menu_list">
         <li>
-            <a href="">Home</a>
+            <a href="index">Home</a>
             <a href="">Our services</a>
             <a href="">News</a>
-            <a href="">Clients</a>
+            <a href="index#clients">Clients</a>
             <a href="">Careers</a>
             <a href="">Contact us</a>
             <a href="">About us</a>
@@ -32,10 +32,10 @@
 
 <div class="mobile_list" id="mobile_lists">
     <li>
-        <a href="">Home</a>
+        <a href="index">Home</a>
         <a href="">Our services</a>
         <a href="">News</a>
-        <a href="">Clients</a>
+        <a href="index#clients">Clients</a>
         <a href="">Careers</a>
         <a href="">Contact us</a>
         <a href="">About us</a>
