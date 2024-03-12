@@ -830,7 +830,7 @@ hr {
     padding-right: 15px !important;
     border-radius: 7px;
     background-color: var(--before-main);
-    width: 100%;
+    width: auto;
     float: right !important;
-    padding-left: 10px !important;
+    padding-left: 5px !important;
 }
