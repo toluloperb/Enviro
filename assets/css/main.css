@@ -821,15 +821,16 @@ hr {
     background-color: var(--before-main);
     text-align: right !important;
     padding: 0 !important;
-    padding-left: 0 !important;
+    margin-left: 30% !important;
 }
 
 .fetched p {
     color: var(--main);
     padding: 8px;
-    padding-right: 15px;
+    padding-right: 15px !important;
     border-radius: 7px;
     background-color: var(--before-main);
-    max-width: 100%;
-    float: right;
+    width: 100%;
+    float: right !important;
+    padding-left: 0 !important;
 }
