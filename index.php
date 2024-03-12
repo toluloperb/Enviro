@@ -169,10 +169,10 @@
 </section>
 
 <section id="main2">
-    <div class="stick_livechat" id="stick_livechat">
+    <div class="livechat" id="livechat_mobile">
         <div class="client_info">
             <div class="a">
-                <img src="assets/images/chat_icon.png"><p>Hello,</p>
+                <img src="assets/images/chat_icon.png" id="chatIcon"><p>Hello,</p>
             </div>
         </div>
         <div class="session_area">
@@ -198,19 +198,8 @@
         </div>
     </div>
 
-    <div class="stick_livechat chat_note" id="chat_note">
-        <div>
-            <p class="p1">Need help?</p>
-            <p class="p2">Chat with our support team</p>
-        </div>
-    </div>
-
-    <div class="stick_livechat livechat_button_mobile" id="livechat_button_mobile">
+    <div class="mobile_chat_btn" id="mobile_chat_btn">
         <img src="assets/images/chat.png" id="show_chat_info">
-    </div>
-
-    <div class="stick_livechat livechat_button_mobile_close" id="livechat_button_mobile_close">
-        <img src="assets/images/chat_close.png" alt="">
     </div>
 </section>
 

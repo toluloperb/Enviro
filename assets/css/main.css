@@ -539,6 +539,38 @@ hr {
     border-radius: 10px;
 }
 
+.livechat {
+    width: 100%;
+    height: auto;
+    background-color: var(--main);
+}
+
+.livechat .chat_tools {
+    border-radius: 0;
+}
+
+#chatIcon {
+    width: 50px !important;
+}
+
+@media only screen and (max-width: 720px) {
+    .mobile_chat_btn {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        background: none;
+        position: fixed;
+        position: -webkit-sticky;
+        left: 72%;
+        z-index: 1;
+        top: 84%;
+        bottom: 7%;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
 #stick_livechat {
     box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
     -webkit-box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
