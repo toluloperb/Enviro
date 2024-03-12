@@ -832,5 +832,5 @@ hr {
     background-color: var(--before-main);
     width: 100%;
     float: right !important;
-    padding-left: 0 !important;
+    padding-left: 10px !important;
 }
