@@ -31,10 +31,24 @@ $(function() {
     document.getElementById("show_chat_info").onmouseover = function() { $('#chat_note').show(); }
     document.getElementById("show_chat_info").onmouseout  = function() { $('#chat_note').hide(); }
 
+    $('#mobile_chat_btn').click(function() {
+        document.getElementById('livechat_mobile').style.display = 'block';
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('mobile_chat_btn').style.display = 'none';
+    })
+
+    $('#closeChatBtn').click(function() {
+        document.getElementById('livechat_mobile').style.display = 'none';
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('mobile_chat_btn').style.display = 'flex';
+    })
+
     $(window).resize(function() {
         document.getElementById('mobile_lists').style.display = 'none';
         document.getElementById('menu_btn_close').style.display = 'none';
         document.getElementById('menu_btn').style.display = 'block';
         document.getElementById('stick_livechat').style.display = 'none';
+        document.getElementById('livechat_mobile').style.display = 'none';
+        document.getElementById('mobile_chat_btn').style.display = 'none';
     });
 });

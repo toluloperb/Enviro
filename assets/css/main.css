@@ -541,16 +541,47 @@ hr {
 
 .livechat {
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: var(--main);
+}
+
+.livechat .client_info {
+    padding-top: 15px;
 }
 
 .livechat .chat_tools {
     border-radius: 0;
+    height: auto;
+    /* background-color: red; */
+}
+
+.livechat .chat_history {
+    height: 100%;
+}
+
+.closeBtn {
+    padding-top: 22%;
+    text-align: right;
+}
+
+.closeBtn button {
+    margin-right: 20px;
+    border: 0;
+    background: none;
+    color: #fff;
+    font-size: 13pt;
 }
 
 #chatIcon {
-    width: 50px !important;
+    width: 50px;
+}
+
+.mobile_chat_btn {
+    display: none;
+}
+
+#livechat_mobile {
+    display: none;
 }
 
 @media only screen and (max-width: 720px) {

@@ -170,6 +170,9 @@
 
 <section id="main2">
     <div class="livechat" id="livechat_mobile">
+        <div class="closeBtn">
+            <button id="closeChatBtn">x</button>
+        </div>
         <div class="client_info">
             <div class="a">
                 <img src="assets/images/chat_icon.png" id="chatIcon"><p>Hello,</p>
