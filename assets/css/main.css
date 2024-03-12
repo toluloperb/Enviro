@@ -306,6 +306,10 @@ li a {
         margin: 0px 0px 25px 0px;
         height: 200px;
     }
+
+    .eachproduct:hover {
+        scale: 100%;
+    }
 }
 
 .client_bg {
