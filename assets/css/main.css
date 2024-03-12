@@ -589,6 +589,11 @@ hr {
     display: none;
 }
 
+.chat_history {
+    display: flex;
+    flex-direction: column;
+}
+
 @media only screen and (max-width: 720px) {
     .mobile_chat_btn {
         display: flex;
