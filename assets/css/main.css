@@ -818,10 +818,9 @@ hr {
     float: right;
     display: flex;
     width: auto;
-    background-color: var(--before-main);
     text-align: right !important;
     padding: 0 !important;
-    margin-left: 20% !important;
+    margin-left: 30% !important;
 }
 
 .fetched p {
@@ -832,5 +831,5 @@ hr {
     background-color: var(--before-main);
     width: 100%;
     float: right !important;
-    padding-left: 5px !important;
+    padding-left: 7px !important;
 }
