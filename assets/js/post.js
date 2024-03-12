@@ -2,6 +2,8 @@ $(document).ready(function () {
     $('#submit').click(function (e) { 
         e.preventDefault();
 
+        id = document.getElementById('email').value
+
         $.ajax({
             method: "post",
             url: "chat_function.php",
@@ -10,6 +12,8 @@ $(document).ready(function () {
             success: function (response) {
                 $('#feedback').text(response);
                 document.getElementById('chat_form').reset();
+                $("#chat_history").load(location.href + " #chat_history " );
+                window.history.replaceState(null, null, "?id=" + id);
             }
         });
     })
@@ -19,6 +23,8 @@ $(document).ready(function () {
     $('#mobile_submit').click(function (e) { 
         e.preventDefault();
 
+        id = document.getElementById('email').value
+
         $.ajax({
             method: "post",
             url: "chat_function.php",
@@ -27,6 +33,8 @@ $(document).ready(function () {
             success: function (response) {
                 $('#feedback').text(response);
                 document.getElementById('mobile_chat_form').reset();
+                $("#chat_history_mobile").load(location.href + " #chat_history_mobile " );
+                window.history.replaceState(null, null, "?id=" + id);
             }
         });
     })

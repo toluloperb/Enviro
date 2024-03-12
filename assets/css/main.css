@@ -808,3 +808,16 @@ hr {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.fetched {
+    float: right;
+    display: flex;
+    width: 80%;
+    background-color: var(--before-main);
+    text-align: right !important;
+    align-items: right;
+}
+
+.fetched p {
+    color: var(--main);
+}
