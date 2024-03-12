@@ -310,9 +310,9 @@
                                                 if($cs == 'Ten')
                                                 {
                                                     ?>
-                                                        <div class="eachchat_cs fetched">
-                                                            <p><?= $chat["messages"]; ?></p>
-                                                        </div>
+                                                       
+                                                            <p class="clientmsg"><?= $chat["messages"]; ?></p>
+                                                     
                                                     <?php
                                                 }
                                                 else 
