@@ -191,10 +191,10 @@
                 </div>
             </div>
             <div class="chat_tools">
-                <form method="POST" id="chat_form">
+                <form method="POST" id="mobile_chat_form">
                     <div>
                         <textarea name="messages" type="text" id="messages" class="chat_tools_input form_data" placeholder="Start Typing..."></textarea>
-                        <button type="button" name="submit" id="submit" class="">Send</button>
+                        <button type="button" name="submit" id="mobile_submit" class="">Send</button>
                     </div>
                 </form>
             </div>
