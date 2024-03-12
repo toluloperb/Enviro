@@ -33,7 +33,7 @@ $(document).ready(function () {
             success: function (response) {
                 $('#feedback').text(response);
                 document.getElementById('mobile_chat_form').reset();
-                $("#chat_history_mobile").load(location.href + " #chat_history_mobile " );
+                $("#chat_history_mobile").load(" #chat_history_mobile > *");
                 window.history.replaceState(null, null, "?id=" + id);
             }
         });
