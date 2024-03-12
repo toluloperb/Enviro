@@ -831,4 +831,5 @@ hr {
     border-radius: 7px;
     background-color: var(--before-main);
     max-width: 100%;
+    float: right;
 }
