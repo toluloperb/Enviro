@@ -816,6 +816,7 @@ hr {
     background-color: var(--before-main);
     text-align: right !important;
     padding: 0 !important;
+    padding-left: 0 !important;
 }
 
 .fetched p {
