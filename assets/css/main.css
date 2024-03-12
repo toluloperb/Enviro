@@ -582,10 +582,10 @@ hr {
 
     #stick_livechat {
         width: 100%;
-        height: 580px;
+        height: 100%;
         background: var(--main);
         position: -webkit-sticky;
-        position: fixed;
+        position: absolute;
         top: 8.3%;
         left: 0%;
         bottom: 10%;
@@ -611,6 +611,13 @@ hr {
     box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
     -webkit-box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
     -moz-box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
+}
+
+@media only screen and (max-width: 720px) {
+    #chat_note {
+        left: 13%;
+        top: 86.7%;
+    }
 }
 
 #chat_note div {
