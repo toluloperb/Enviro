@@ -48,7 +48,7 @@ $(function() {
         document.getElementById('menu_btn_close').style.display = 'none';
         document.getElementById('menu_btn').style.display = 'block';
         document.getElementById('stick_livechat').style.display = 'none';
-        document.getElementById('livechat_mobile').style.display = 'none';
+        document.getElementById('stick_livechat_button_close').style.display = 'none';
         document.getElementById('mobile_chat_btn').style.display = 'none';
     });
 });
