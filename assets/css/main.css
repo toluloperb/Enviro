@@ -582,7 +582,7 @@ hr {
 
     #stick_livechat {
         width: 100%;
-        height: 100%;
+        height: auto;
         background: var(--main);
         /* position: -webkit-sticky; */
         position: fixed;
