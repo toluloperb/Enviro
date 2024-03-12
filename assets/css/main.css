@@ -812,12 +812,17 @@ hr {
 .fetched {
     float: right;
     display: flex;
-    width: 80%;
+    width: auto;
     background-color: var(--before-main);
     text-align: right !important;
-    align-items: right;
+    padding: 0 !important;
 }
 
 .fetched p {
     color: var(--main);
+    padding: 8px;
+    padding-right: 15px;
+    border-radius: 7px;
+    background-color: var(--before-main);
+    max-width: 100%;
 }
