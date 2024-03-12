@@ -572,17 +572,14 @@ hr {
 
 @media only screen and (max-width: 720px) {
     .livechat_button, .livechat_button_close {
-        display: flex;
-        width: 100px;
-        height: 100px;
-        background: none;
-        position: fixed;
-        position: -webkit-sticky;
-        left: 72%;
-        z-index: 1;
-        top: 85%;
-        bottom: 3% !important;
-        padding: 5px;
+        display: none;
+        left: 0%;
+        z-index: 0;
+        top: 0%;
+    }
+
+    .livechat_button_mobile, .livechat_button_mobile_close {
+        display: none;
     }
 
     #stick_livechat {

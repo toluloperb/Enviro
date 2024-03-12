@@ -168,6 +168,52 @@
     </main>
 </section>
 
+<section id="main2">
+    <div class="stick_livechat" id="stick_livechat">
+        <div class="client_info">
+            <div class="a">
+                <img src="assets/images/chat_icon.png"><p>Hello,</p>
+            </div>
+        </div>
+        <div class="session_area">
+            <div class="chat_history">
+                <div class="eachchat_cs">
+                    <p>Welcome to Manor Realtors Group (Customer Assistance)</p>
+                </div>
+                <div class="eachchat_cs">
+                    <p>Kindly provide us with your email</p>
+                </div>
+                <div class="eachchat_cs" style="display:none;">
+                    <p id="feedback" ></p>
+                </div>
+            </div>
+            <div class="chat_tools">
+                <form method="POST" id="chat_form">
+                    <div>
+                        <textarea name="messages" type="text" id="messages" class="chat_tools_input form_data" placeholder="Start Typing..."></textarea>
+                        <button type="button" name="submit" id="submit" class="">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="stick_livechat chat_note" id="chat_note">
+        <div>
+            <p class="p1">Need help?</p>
+            <p class="p2">Chat with our support team</p>
+        </div>
+    </div>
+
+    <div class="stick_livechat livechat_button_mobile" id="livechat_button_mobile">
+        <img src="assets/images/chat.png" id="show_chat_info">
+    </div>
+
+    <div class="stick_livechat livechat_button_mobile_close" id="livechat_button_mobile_close">
+        <img src="assets/images/chat_close.png" alt="">
+    </div>
+</section>
+
 <?php
     include("includes/footer.php");
 ?>
