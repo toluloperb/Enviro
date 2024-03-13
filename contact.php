@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="side_b">
-                    <form action="" method="post">
+                    <form action="functions/userFunctions.php" method="post">
                         <div class="single_row">
                             <div>
                                 <label for="">First Name</label>
@@ -54,7 +54,7 @@
                         </div>
 
                         <div class="contactBtns">
-                            <button type="submit" style="background: #0000A8">Submit</button>
+                            <button name="contactForm" type="submit" style="background: #0000A8">Submit</button>
                         </div>
                     </form>
                 </div>
