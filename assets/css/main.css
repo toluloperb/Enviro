@@ -754,6 +754,7 @@ hr {
     background-size: cover;
     overflow: auto;
     padding: 15px;
+    /* padding-bottom: 40px !important; */
 }
 
 .chat_tools {
@@ -764,7 +765,20 @@ hr {
     padding: 8px 15px 5px 15px;
 }
 
+@media only screen and (max-width: 720px) {
+    .chat_tools {
+        height: 10% !important;
+    }
+
+    #chat_history_mobile {
+        overflow: none !important;
+        overflow-y:auto !important;
+        overflow-x:hidden !important;
+    }
+}
+
 .eachchat_cs {
+    max-width: 80%;
     width: auto;
     height: auto;
     background: var(--main);
@@ -815,11 +829,10 @@ hr {
 
 .fetched {
     float: right;
-    display: flex;
-    width: auto;
+    width: 100% !important;
     text-align: right !important;
     padding: 0 !important;
-    margin-left: 30% !important;
+    margin-top: 5px;    
 }
 
 .fetched p {
@@ -828,7 +841,9 @@ hr {
     padding-right: 15px !important;
     border-radius: 7px;
     background-color: var(--before-main);
-    width: 100%;
+    max-width: 80%;
+    width: auto;
     float: right !important;
     padding-left: 7px !important;
+    /* margin-left: 30% !important; */
 }

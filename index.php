@@ -318,7 +318,7 @@
                                                 else 
                                                 {
                                                     ?>
-                                                        <div class="eachchat_cs fetched">
+                                                        <div class="fetched" id="fetched">
                                                             <p><?= $chat["messages"]; ?></p>
                                                         </div>
                                                     <?php    
