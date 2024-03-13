@@ -48,7 +48,7 @@
                                                     else 
                                                     {
                                                         ?>
-                                                            <div class="eachchat_cs fetched">
+                                                            <div class="fetched_desktop">
                                                                 <p><?= $chat["messages"]; ?></p>
                                                             </div>
                                                         <?php    

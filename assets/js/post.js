@@ -11,8 +11,11 @@ $(document).ready(function () {
             dataType: "text",
             success: function (response) {
                 $('#feedback').text(response);
+
                 document.getElementById('chat_form').reset();
-                $("#chat_history").load(location.href + " #chat_history " );
+
+                $("#chat_history").load(" #chat_history > *");
+
                 window.history.replaceState(null, null, "?id=" + id);
             }
         });
@@ -36,7 +39,6 @@ $(document).ready(function () {
                 document.getElementById('mobile_chat_form').reset();
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
-                
                 
                 window.history.replaceState(null, null, "?id=" + id);
             }

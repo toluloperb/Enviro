@@ -10,7 +10,7 @@
             <a href="">News</a>
             <a href="index#clients">Clients</a>
             <a href="">Careers</a>
-            <a href="">Contact us</a>
+            <a href="contact">Contact us</a>
             <a href="">About us</a>
         </li>
     </div>
@@ -37,7 +37,7 @@
         <a href="">News</a>
         <a href="index#clients">Clients</a>
         <a href="">Careers</a>
-        <a href="">Contact us</a>
+        <a href="contact">Contact us</a>
         <a href="">About us</a>
 
         <div class="searchbar_mobile">
