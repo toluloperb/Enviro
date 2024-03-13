@@ -33,6 +33,8 @@ $(document).ready(function () {
             success: function (response) {
                 $('#feedback').text(response);
 
+                window.history.replaceState(null, null, "?id=" + id);
+
                 document.getElementById('mobile_chat_form').reset();
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
@@ -41,8 +43,6 @@ $(document).ready(function () {
                     const element = document.getElementById(chat_history_mobile);
                     element.scrollTop = element.scrollHeight;
                 }
-                
-                window.history.replaceState(null, null, "?id=" + id);
             }
         });
     })
