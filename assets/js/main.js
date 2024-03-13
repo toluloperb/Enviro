@@ -31,12 +31,8 @@ $(function() {
     document.getElementById("show_chat_info").onmouseover = function() { $('#chat_note').show(); }
     document.getElementById("show_chat_info").onmouseout  = function() { $('#chat_note').hide(); }
 
-    var out = document.getElementById("chat_history_mobile");
-    // allow 1px inaccuracy by adding 1
-
     $('#mobile_chat_btn').click(function() {
         document.getElementById('livechat_mobile').style.display = 'block';
-        var isScrolledToBottom = out.scrollHeight - out.clientHeight <= out.scrollTop + 1;
         document.getElementById('main').style.display = 'none';
         document.getElementById('mobile_chat_btn').style.display = 'none';
     })

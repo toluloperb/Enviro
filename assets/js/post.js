@@ -32,15 +32,11 @@ $(document).ready(function () {
             dataType: "text",
             success: function (response) {
                 $('#feedback').text(response);
-
+                
                 document.getElementById('mobile_chat_form').reset();
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
                 
-                const scrollToBottom = (chat_history_mobile) => {
-                    const element = document.getElementById(chat_history_mobile);
-                    element.scrollTop = element.scrollHeight;
-                }
                 
                 window.history.replaceState(null, null, "?id=" + id);
             }
