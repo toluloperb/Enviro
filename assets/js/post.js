@@ -4,6 +4,8 @@ $(document).ready(function () {
 
         id = document.getElementById('email').value
 
+var elem = document.getElementById('chat_history_mobile');
+
         $.ajax({
             method: "post",
             url: "chat_function.php",
@@ -34,6 +36,8 @@ $(document).ready(function () {
                 $('#feedback').text(response);
                 document.getElementById('mobile_chat_form').reset();
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
+
+elem.scrollTop = elem.scrollHeight;
                 window.history.replaceState(null, null, "?id=" + id);
             }
         });
