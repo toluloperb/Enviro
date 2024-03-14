@@ -37,10 +37,10 @@
                                                 <?php
                                                     $cs = $chat["email"];
 
-                                                    if($cs == 'Ten')
+                                                    if($cs == 'Admin')
                                                     {
                                                         ?>
-                                                            <div class="eachchat_cs fetched">
+                                                            <div class="admin_fetched_desktop">
                                                                 <p><?= $chat["messages"]; ?></p>
                                                             </div>
                                                         <?php
@@ -89,9 +89,39 @@
                                 <div class="eachchat_cs">
                                     <p>Kindly provide us with your email</p>
                                 </div>
-                                <div class="eachchat_cs" style="display:none;">
-                                    <p id="feedback" ></p>
-                                </div>
+                                <?php
+                                    $fetchChatHistory = "SELECT * FROM cs_chats WHERE session_id = '$id'";
+                                    $fetchChatHistoryRun = mysqli_query($con, $fetchChatHistory);
+
+                                    if(mysqli_num_rows($fetchChatHistoryRun) > 0)
+                                    {
+                                        foreach($fetchChatHistoryRun as $chat)
+                                        {
+                                            ?>
+                                                <?php
+                                                    $cs = $chat["email"];
+
+                                                    if($cs == 'Admin')
+                                                    {
+                                                        ?>
+                                                            <div class="admin_fetched_desktop">
+                                                                <p><?= $chat["messages"]; ?></p>
+                                                            </div>
+                                                        <?php
+                                                    }
+                                                    else 
+                                                    {
+                                                        ?>
+                                                            <div class="fetched_desktop">
+                                                                <p><?= $chat["messages"]; ?></p>
+                                                            </div>
+                                                        <?php    
+                                                    }
+                                                ?>
+                                            <?php
+                                        }
+                                    }
+                                ?>
                             </div>
                             <div class="chat_tools">
                                 <form method="POST" id="chat_form">
@@ -299,7 +329,7 @@
                                 $fetchChatHistory = "SELECT * FROM cs_chats WHERE session_id = '$id'";
                                 $fetchChatHistoryRun = mysqli_query($con, $fetchChatHistory);
 
-                                if(mysqli_num_rows($fetchChatHistoryRun) > 0)
+                                if($fetchChatHistoryRun)
                                 {
                                     foreach($fetchChatHistoryRun as $chat)
                                     {
@@ -307,11 +337,13 @@
                                             <?php
                                                 $cs = $chat["email"];
 
-                                                if($cs == 'Ten')
+                                                if($cs == 'Admin')
                                                 {
                                                     ?>
                                                        
-                                                            <p class="clientmsg"><?= $chat["messages"]; ?></p>
+                                                       <div class="admin_fetched_desktop" id="fetched">
+                                                            <p><?= $chat["messages"]; ?></p>
+                                                        </div>
                                                      
                                                     <?php
                                                 }
@@ -356,20 +388,43 @@
                     </div>
                     <div class="session_area">
                         <div class="chat_history">
-                            <div class="eachchat_cs">
-                                <p>Welcome to Manor Realtors Group (Customer Assistance)</p>
-                            </div>
-                            <div class="eachchat_cs">
-                                <p>Kindly provide us with your email</p>
-                            </div>
-                            <div class="eachchat_cs" style="display:none;">
-                                <p id="feedback" ></p>
-                            </div>
+                            <?php
+                                $fetchChatHistory = "SELECT * FROM cs_chats WHERE session_id = '$id'";
+                                $fetchChatHistoryRun = mysqli_query($con, $fetchChatHistory);
+
+                                if(mysqli_num_rows($fetchChatHistoryRun) > 0)
+                                {
+                                    foreach($fetchChatHistoryRun as $chat)
+                                    {
+                                        ?>
+                                            <?php
+                                                $cs = $chat["email"];
+
+                                                if($cs == 'Ten')
+                                                {
+                                                    ?>
+                                                       
+                                                            <p class="clientmsg"><?= $chat["messages"]; ?></p>
+                                                     
+                                                    <?php
+                                                }
+                                                else 
+                                                {
+                                                    ?>
+                                                        <div class="fetched" id="fetched">
+                                                            <p><?= $chat["messages"]; ?></p>
+                                                        </div>
+                                                    <?php    
+                                                }
+                                            ?>
+                                        <?php
+                                    }
+                                }
+                            ?>
                         </div>
                         <div class="chat_tools">
                             <form method="POST" id="mobile_chat_form">
                                 <div>
-                                    <?php $id = rand(000000, 999999) ?>
                                     <input type="text" id="email" name="session_id" value="<?= $id ?>" hidden>
                                     <textarea name="messages" type="text" id="messages" class="chat_tools_input form_data" placeholder="Start Typing..."></textarea>
                                     <button type="button" name="submit" id="mobile_submit" class="">Send</button>
@@ -382,9 +437,33 @@
         }
     ?>
 
-    <div class="mobile_chat_btn" id="mobile_chat_btn">
-        <img src="assets/images/chat.png" id="show_chat_info">
-    </div>
+    <!-- Fresh Chat -->
+
+    <form action="" method="post" id="start_session_form">
+        <?php
+            if(isset($_GET["id"]))
+            {
+                $id = $_GET["id"];
+
+                ?>
+                    <input type="text" id="session_id" name="session_id" value="<?= $id ?>" hidden>
+                    <div class="mobile_chat_btn" id="mobile_chat_btn">
+                            <img src="assets/images/chat.png" id="show_chat_info">
+                    </div>
+                <?php
+            }
+            else 
+            {
+                ?>
+                    <?php $session_id = rand(000000, 999999) ?>
+                    <input type="text" id="session_id" name="session_id" value="<?= $session_id ?>" hidden>
+                    <div class="mobile_chat_btn" id="mobile_chat_btn">
+                        <img src="assets/images/chat.png" id="show_chat_info">
+                    </div>
+                <?php
+            }
+        ?>
+    </form>
 </section>
 
 <?php

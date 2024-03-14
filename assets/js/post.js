@@ -39,8 +39,6 @@ $(document).ready(function () {
                 document.getElementById('mobile_chat_form').reset();
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
-                
-                window.history.replaceState(null, null, "?id=" + id);
             }
         });
     })
