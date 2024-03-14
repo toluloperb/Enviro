@@ -9,11 +9,11 @@
                 <button id="open_sidebar"><img src="assets/images/open_btn.png" alt=""></button>
 
                 <div class="then">
-                    <div class="sessions">
+                    <div class="sessions" id="">
                         <h3>Live Chat Sessions</h3>
-                        <div class="allsessions">
+                        <div class="allsessions" id="allsessions">
                             <?php
-                                $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New'";
+                                $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
                                 $select_sessions_run = mysqli_query($con, $select_sessions);
                                 
                                 if(mysqli_num_rows($select_sessions_run) > 0)

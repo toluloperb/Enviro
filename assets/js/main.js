@@ -22,6 +22,33 @@ $(function() {
         document.getElementById('stick_livechat_button_close').style.display = 'flex';
     })
 
+    $('#stick_livechat_button').click(function() {
+
+        id = document.getElementById('session_id').value
+
+        $.ajax({
+            method: "post",
+            url: "session.php",
+            data: $('#start_session_form').serialize(),
+            dataType: "text",
+            success: function (response) {
+                document.getElementById('stick_livechat').style.display = 'block';
+
+                document.getElementById('stick_livechat_button').style.display = 'none';
+
+                document.getElementById('stick_livechat_button_close').style.display = 'flex';
+                
+                document.getElementById('chat_form').reset();
+
+                document.getElementById('email').value = id;
+
+                window.history.pushState("null", "null", "?id=" + id);
+
+                $("#chat_history").load(" #chat_history > *");
+            }
+        });
+    })
+
     $('#stick_livechat_button_close').click(function() {
         document.getElementById('stick_livechat').style.display = 'none';
         document.getElementById('stick_livechat_button').style.display = 'flex';
@@ -48,6 +75,8 @@ $(function() {
                 document.getElementById('mobile_chat_btn').style.display = 'none';
                 
                 document.getElementById('mobile_chat_form').reset();
+
+                document.getElementById('email').value = id;
                 
                 window.history.replaceState(null, null, "?id=" + id);
 

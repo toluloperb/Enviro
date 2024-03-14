@@ -25,6 +25,10 @@ $(document).ready(function () {
     setInterval(function(){
         $('#chat_history').load(window.location.href + " #chat_history > *");
     }, 1000);
+
+    setInterval(function(){
+        $('#allsessions').load(window.location.href + " #allsessions > *");
+    }, 1000);
 });
 
 document.addEventListener('DOMContentLoaded', function() {

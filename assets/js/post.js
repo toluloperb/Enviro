@@ -14,9 +14,9 @@ $(document).ready(function () {
 
                 document.getElementById('chat_form').reset();
 
-                $("#chat_history").load(" #chat_history > *");
+                document.getElementById('email').value = id;
 
-                window.history.replaceState(null, null, "?id=" + id);
+                $("#chat_history").load(" #chat_history > *");
             }
         });
     })
@@ -37,6 +37,8 @@ $(document).ready(function () {
                 $('#feedback').text(response);
                 
                 document.getElementById('mobile_chat_form').reset();
+
+                document.getElementById('email').value = id;
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
             }

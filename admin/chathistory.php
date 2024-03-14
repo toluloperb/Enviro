@@ -20,7 +20,7 @@
                         <h3>Live Chat Sessions</h3>
                         <div class="allsessions" id="allsessions">
                             <?php
-                                $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New'";
+                                $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC ";
                                 $select_sessions_run = mysqli_query($con, $select_sessions);
                                 
                                 if(mysqli_num_rows($select_sessions_run) > 0)
