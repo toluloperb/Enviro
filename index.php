@@ -381,6 +381,12 @@
                     </div>
                     <div class="session_area">
                         <div class="chat_history">
+                            <div class="eachchat_cs">
+                                <p>Welcome to Manor Realtors Group (Customer Assistance)</p>
+                            </div>
+                            <div class="eachchat_cs">
+                                <p>Kindly provide us with your email</p>
+                            </div>
                             <?php
                                 $fetchChatHistory = "SELECT * FROM cs_chats WHERE session_id = '$id'";
                                 $fetchChatHistoryRun = mysqli_query($con, $fetchChatHistory);
