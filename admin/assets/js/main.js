@@ -9,6 +9,24 @@ $(function() {
         document.getElementById('open_sidebar').style.display = 'none';
     })
 
+    $('#read_btn').click(function() {
+        document.getElementById('.read').style.display = 'flex';
+        document.getElementById('.unread').style.display = 'none';
+        document.getElementById('.ended').style.display = 'none';
+    })
+
+    $('#unread_btn').click(function() {
+        document.getElementById('.read').style.display = 'none';
+        document.getElementById('.unread').style.display = 'flex';
+        document.getElementById('.ended').style.display = 'none';
+    })
+
+    $('#ended_btn').click(function() {
+        document.getElementById('.ended').style.display = 'flex';
+        document.getElementById('.unread').style.display = 'none';
+        document.getElementById('.read').style.display = 'none';
+    })
+
     $('.menu-item a').click(function(){
         $(this).addClass('active').siblings().removeClass('active');
     })

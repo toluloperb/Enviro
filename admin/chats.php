@@ -9,35 +9,91 @@
                 <button id="open_sidebar"><img src="assets/images/open_btn.png" alt=""></button>
 
                 <div class="then">
-                    <div class="sessions" id="">
-                        <h3>Live Chat Sessions</h3>
-                        <div class="allsessions" id="allsessions">
-                            <?php
-                                $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
-                                $select_sessions_run = mysqli_query($con, $select_sessions);
-                                
-                                if(mysqli_num_rows($select_sessions_run) > 0)
-                                {
-                                    foreach($select_sessions_run as $session)
-                                    {
-                                        ?>
-                                            <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
-                                            <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
-                                        <?php
-                                    }
-                                }
-                                else
-                                {
-                                    ?>
-                                        <p>No one yet!</p>
+                    
+                        <div class="sessions" id="unread">
+                            <h3>Live Chat Sessions</h3>
+                            <!-- <div class="forTheTools"> -->
+                                <div class="allsessions unread" id="allsessions">
                                     <?php
-                                }
-                            ?>
-                        </div>
-                        <div class="tools">
+                                        $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
+                                        $select_sessions_run = mysqli_query($con, $select_sessions);
+                                        
+                                        if(mysqli_num_rows($select_sessions_run) > 0)
+                                        {
+                                            foreach($select_sessions_run as $session)
+                                            {
+                                                ?>
+                                                    <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
+                                                    <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
+                                                <?php
+                                            }
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <p>No one yet!</p>
+                                            <?php
+                                        }
+                                    ?>
+                                </div>
+                                
+                                <div class="allsessions read" id="allsessions_">
+                                    <?php
+                                        $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
+                                        $select_sessions_run = mysqli_query($con, $select_sessions);
+                                        
+                                        if(mysqli_num_rows($select_sessions_run) > 0)
+                                        {
+                                            foreach($select_sessions_run as $session)
+                                            {
+                                                ?>
+                                                    <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
+                                                    <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
+                                                <?php
+                                            }
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <p>No one yet!</p>
+                                            <?php
+                                        }
+                                    ?>
+                                </div>
 
+                                <div class="allsessions ended" id="allsessions">
+                                    <?php
+                                        $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
+                                        $select_sessions_run = mysqli_query($con, $select_sessions);
+                                        
+                                        if(mysqli_num_rows($select_sessions_run) > 0)
+                                        {
+                                            foreach($select_sessions_run as $session)
+                                            {
+                                                ?>
+                                                    <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
+                                                    <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
+                                                <?php
+                                            }
+                                        }
+                                        else
+                                        {
+                                            ?>
+                                                <p>No one yet!</p>
+                                            <?php
+                                        }
+                                    ?>
+                                </div>
+
+                                <div class="tools">
+                                    <div class="foreign_keys">
+                                        <button id="unread_btn">Unread</button>
+                                        <button id="read_btn">Read</button>
+                                        <button id="ended_btn">Ended</button>
+                                    </div>
+                                </div>
+                            <!-- </div> -->
                         </div>
-                    </div>
                     <div class="sessions chat_sessions">
                         <h3>Chat History</h3>
                         <div class="chat" id="chat_history">
