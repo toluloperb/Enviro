@@ -132,13 +132,13 @@ body {
     flex-direction: column;
 }
 
-.allsessions {
-    margin-top: 10px;
-    height: 100%;
+.listings {
+    height: 90%;
+    width: 100%;
     overflow: auto;
 }
 
-.allsessions p {
+.listings p {
     width: 100%;
     padding: 8px;
     padding-left: 15px;
@@ -266,44 +266,147 @@ body {
     cursor: pointer;
 }
 
-.chat_tools {
-    width: 100%;
-    height: 10%;
-    background-color: #fff;
-    border-radius: 0px 0px 10px 10px;
-    padding: 8px 15px 5px 15px;
-}
-
-.foreign_keys {
-    width: 100%;
-    height: 100%;
-    background: red;
+.emailButtons {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.foreign_keys button{
     width: 100%;
+    height: 10%;
 }
 
-.read, .ended {
+.emailButtons button {
+    width: 100%;
+    padding: 6px 18px 6px 18px;
+    border: none;
+    background: var(--main);
+    font-family: var(--font-family);
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.emailButtons button:hover {
+    background: var(--main);
+    color: var(--before-main);
+}
+
+.sideA {
+    width: 35%;
+    height: 100%;
+}
+
+.containerForMails {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    flex-direction: row;
+}
+
+.emailContent {
+    width: 60%;
+    height: 100%;
+    background: black;
+}
+
+#read, #ended {
     display: none;
 }
 
-/* .forTheTools {
-    display: flex;
-    flex-direction: column;
-    width: 35%;
-    height: 100vh;
-    overflow: auto;
-} */
-
-.forTheTools {
-    width: 35%;
+.containerForListings {
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
 }
 
-.forTheTools {
+.authContainer {
+    width: 100%;
+    height: 100%;
+    /* background-color: #1b1b1b; */
+    padding: 10%;
+    align-items: center;
+  }
+  
+  .authcontainerForm {
+    width: 35%;
+    height: auto;
+    border: 1px solid #22222233;
+    border-radius: 10px;
+    margin-left: 30%;
+    padding: 4%;
+  }
+  
+  .authcontainerForm p {
+    font-size: 10pt;
+    margin-top: 1.7%;
+  }
+  
+  .wrap {
+    width: 100%;
+  }
+  
+  .wrap .inputLogin {
+    width: 100%;
+    padding: 4%;
+    margin-bottom: 10px;
+    background: none;
+    border: 1px solid #22222236;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .wrap .forgotPassText {
+    text-decoration: none;
+    color: #131313;
+    /* background-color: #1b1b1b; */
+    /* padding: 5px 4% 5px 4%; */
+    font-size: 10pt;
+    margin-top: 5%;
+  }
+  
+  .otpCode {
     display: flex;
-    flex-direction: column;
+    margin-left: -.5rem;
+  }
+  
+  .otpCode__digit {
+    border: 1px solid #2222222f;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-left: .5rem;
+    font-family: monospace;
+    font-size: 1.5em;
+    line-height: 2.5;
+    padding: 0;
+    
+    &:focus {
+       outline: none;
+       border-color: blue;
+    }
+  }
+  
+  @media only screen and (max-width: 720px) {
+    .authcontainerForm {
+      width: 100%;
+      margin-left: 0%;
+    }
+    
+    .authContainer {
+      padding: 5%;
+    }
+  }
+
+  .logoutContainer {
+    height: 10%;
+    width: 100%;
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logoutBtn {
+    width: 100%; 
+    background: #fff;
+    color: var(--main) !important;
+    border-radius: 5px;
 }

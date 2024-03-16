@@ -10,21 +10,21 @@ $(function() {
     })
 
     $('#read_btn').click(function() {
-        document.getElementById('.read').style.display = 'flex';
-        document.getElementById('.unread').style.display = 'none';
-        document.getElementById('.ended').style.display = 'none';
+        document.getElementById('read').style.display = 'block';
+        document.getElementById('unread').style.display = 'none';
+        document.getElementById('ended').style.display = 'none';
     })
 
     $('#unread_btn').click(function() {
-        document.getElementById('.read').style.display = 'none';
-        document.getElementById('.unread').style.display = 'flex';
-        document.getElementById('.ended').style.display = 'none';
+        document.getElementById('unread').style.display = 'block';
+        document.getElementById('read').style.display = 'none';
+        document.getElementById('ended').style.display = 'none';
     })
 
     $('#ended_btn').click(function() {
-        document.getElementById('.ended').style.display = 'flex';
-        document.getElementById('.unread').style.display = 'none';
-        document.getElementById('.read').style.display = 'none';
+        document.getElementById('ended').style.display = 'block';
+        document.getElementById('read').style.display = 'none';
+        document.getElementById('unread').style.display = 'none';
     })
 
     $('.menu-item a').click(function(){
@@ -45,7 +45,9 @@ $(document).ready(function () {
     }, 1000);
 
     setInterval(function(){
-        $('#allsessions').load(window.location.href + " #allsessions > *");
+        $('#unread').load(window.location.href + " #unread > *");
+        $('#read').load(window.location.href + " #read > *");
+        $('#ended').load(window.location.href + " #ended > *");
     }, 1000);
 });
 

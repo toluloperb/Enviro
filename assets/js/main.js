@@ -78,7 +78,7 @@ $(function() {
 
                 document.getElementById('email').value = id;
                 
-                window.history.replaceState(null, null, "?id=" + id);
+                window.history.pushState("null", "null", "?id=" + id);
 
                 $("#chat_history_mobile").load(" #chat_history_mobile > *");
             }

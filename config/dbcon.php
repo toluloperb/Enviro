@@ -3,7 +3,7 @@
     // $host = "localhost";
     // $username = "root";
     // $password = "";
-    // $database = "manorrealtor";
+    // $database = "manorrealtors";
 
     $host = "localhost";
     $username = "manojlmu_manorrealtor";

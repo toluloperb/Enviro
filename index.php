@@ -399,11 +399,13 @@
                                             <?php
                                                 $cs = $chat["email"];
 
-                                                if($cs == 'Ten')
+                                                if($cs == 'Admin')
                                                 {
                                                     ?>
                                                        
-                                                            <p class="clientmsg"><?= $chat["messages"]; ?></p>
+                                                       <div class="admin_fetched_desktop" id="fetched">
+                                                            <p><?= $chat["messages"]; ?></p>
+                                                        </div>
                                                      
                                                     <?php
                                                 }
