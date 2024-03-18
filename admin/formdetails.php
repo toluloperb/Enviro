@@ -25,7 +25,7 @@
                                             {
                                                 ?>
                                                     <input type="text" value="<?= $session["id"] ?>" hidden>
-                                                    <a href="chathistory?id=<?= $session["id"] ?>"><p><?= $session["fname"] ?> <?= $session["lname"] ?></p></a>
+                                                    <a href="formdetails?id=<?= $session["id"] ?>"><p><?= $session["fname"] ?> <?= $session["lname"] ?></p></a>
                                                 <?php
                                             }
                                         }
