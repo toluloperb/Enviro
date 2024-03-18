@@ -104,7 +104,7 @@
                                 <h3>Chat History > <?= $session_id ?></h3>
                                 <form action="../functions/adminFunction.php" method="post" id="session_form_end">
                                     <input type="text" value="<?= $session_id ?>" name="sessionId" hidden>
-                                    <button type="submit" name="endSession" id="endSession">End Session</button>
+                                    <button type="submit" name="endSession">End Session</button>
                                 </form>
                             </div>
                             <div class="chat" id="chat_history">
