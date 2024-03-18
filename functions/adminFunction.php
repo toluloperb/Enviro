@@ -12,7 +12,6 @@
         if($endSessionIdRun)
         {
             $_SESSION["status"] = "Session Ended";
-            // header("Location: ".$_SERVER['HTTP_REFERER']);
             header("Location: ../admin/chats.php");
             exit();
         }
