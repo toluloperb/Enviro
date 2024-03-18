@@ -42,7 +42,7 @@
 
                         <div class="sessions chat_sessions">
                             <h3></h3>
-                            <div class="chat" id="read_mail">
+                            <div class="chat read_mail" id="read_mail">
 
                             </div>
                         </div>
