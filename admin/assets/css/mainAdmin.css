@@ -430,3 +430,11 @@ body {
 .top_top form button:hover {
     background-color: rgb(230, 0, 0);
 }
+
+.read_mail {
+    background: none !important;
+}
+
+.read_mail p {
+    margin-bottom: 10px;
+}

@@ -13,6 +13,7 @@
 
         <li class="menu-item">
             <a href="index">Dashboard</a>
+            <a href="">Products</a>
             <a href="contact_forms">Contact Forms</a>
             <a href="chats">Chats</a>
         </li>
