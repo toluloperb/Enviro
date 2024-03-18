@@ -10,7 +10,7 @@
                     <p>Need to get in touch? We’d love to hear from you using any of the means below.</p>
                     <div class="contactBtns">
                         <a href=""><button style="background: #0000A8">Live Chat</button></a>
-                        <a href="tel:+"><button style="background: green">Call</button></a>
+                        <a href="tel:+2349169978929"><button style="background: green">Call</button></a>
                     </div>
                 </div>
                 <div class="side_b">
