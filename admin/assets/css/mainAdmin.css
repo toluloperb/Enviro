@@ -410,3 +410,23 @@ body {
     color: var(--main) !important;
     border-radius: 5px;
 }
+
+.top_top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top_top form button {
+    background-color: red;
+    border-radius: 7px;
+    padding: 6px 12px 6px 12px;
+    border: none;
+    color: #fff;
+    font-family: var(--font-family);
+    cursor: pointer;
+} 
+
+.top_top form button:hover {
+    background-color: rgb(230, 0, 0);
+}

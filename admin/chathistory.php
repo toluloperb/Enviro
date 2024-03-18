@@ -100,7 +100,13 @@
                         </div>
 
                         <div class="sessions chat_sessions">
-                            <h3>Chat History > <?= $session_id ?></h3>
+                            <div class="top_top">
+                                <h3>Chat History > <?= $session_id ?></h3>
+                                <form action="../functions/adminFunction.php" method="post" id="session_form_end">
+                                    <input type="text" value="<?= $session_id ?>" name="sessionId" hidden>
+                                    <button type="submit" name="endSession" id="endSession">End Session</button>
+                                </form>
+                            </div>
                             <div class="chat" id="chat_history">
                                 <div class="eachchat_cs">
                                     <p>Welcome to Manor Realtors Group (Customer Assistance)</p>
@@ -136,6 +142,10 @@
                                                             </div>
                                                         <?php    
                                                     }
+                                                ?>
+
+                                                <?php
+                                                    
                                                 ?>
                                             <?php
                                         }
