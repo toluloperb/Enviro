@@ -42,13 +42,13 @@ $(function() {
 $(document).ready(function () {
     setInterval(function(){
         $('#chat_history').load(window.location.href + " #chat_history > *");
-    }, 1000);
+    }, 2000);
 
     setInterval(function(){
         $('#unread').load(window.location.href + " #unread > *");
         $('#read').load(window.location.href + " #read > *");
         $('#ended').load(window.location.href + " #ended > *");
-    }, 1000);
+    }, 2000);
 });
 
 document.addEventListener('DOMContentLoaded', function() {
