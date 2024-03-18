@@ -26,6 +26,7 @@
                     <html>
                         <body>
                             <p>You have a new Message Waiting from $session_id</p>
+                            <p>'$messages'</p>
                         </body>
                     </html>
                 ";
