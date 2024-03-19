@@ -80,6 +80,7 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .set {
@@ -417,7 +418,7 @@ body {
     justify-content: space-between;
 }
 
-.top_top form button {
+.top_top form button, .addProduct {
     background-color: red;
     border-radius: 7px;
     padding: 6px 12px 6px 12px;
@@ -437,4 +438,65 @@ body {
 
 .read_mail p {
     margin-bottom: 10px;
+}
+
+.addproductForm {
+    width: 100%;
+    height: 100%;
+    /* background: #131313; */
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.productsThen {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgPart {
+    width: 50%;
+    height: 100%;
+    /* background-color: var(--before-main); */
+}
+
+.descPart {
+    width: 50%;
+    height: auto;
+    background-color: #b6b6ff;
+    padding: 50px;
+    border-radius: 20px;
+    padding-bottom: 0 !important;
+    margin-bottom: 50px;
+}
+
+.descPart div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7px;
+}
+
+.descPart div label {
+    margin-bottom: 5px;
+    color: #131313;
+}
+
+.descPart div input, .descPart div textarea, .descPart div select {
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12pt;
+    padding-left: 10px;
+    font-family: var(--font-family);
+}
+
+.descPart div textarea {
+    height: 100px;
+    padding-top: 10px;
+}
+
+.addProduct {
+    background-color: #0000A8;
+    padding: 15px 35px 15px 35px;
 }
