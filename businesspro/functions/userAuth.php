@@ -17,6 +17,7 @@ if(isset($_POST['login_btn']))
             $user_id = $data['id'];
             $user_fname = $data['business_rep'];
             $business = $data['business_name'];
+            $logo = $data['business_logo'];
             $user_email = $data['email'];
         }
 
@@ -26,6 +27,7 @@ if(isset($_POST['login_btn']))
             'user_name'=>$user_fname,
             'user_email'=>$user_email,
             'business_name'=>$business,
+            'business_logo'=>$logo,
         ];
 
         if($_SESSION['auth'])

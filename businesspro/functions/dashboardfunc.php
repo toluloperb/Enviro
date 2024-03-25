@@ -59,6 +59,7 @@
         $sender = $_POST["sender"];
         $business_id = $_POST["business_id"];
         $business_name = $_SESSION['auth_user']['business_name'];
+        $business_logo = $_SESSION['auth_user']['business_logo'];
         $type = "single";
 
         $insert = "INSERT INTO emails (type,business_id,recepient_email, subject, message) VALUES('$type','$business_id','$recepient_email','$subjectRun','$messageRun')";
@@ -71,8 +72,9 @@
 
             $message = "
                 <html>
-                    <body>
-                        <p>$messageRun</p>
+                    <body style=\"background: #fff; text-align: center;\">
+                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$business_logo\">
+                        <p style=\"color: #555;\">$messageRun</p>
                     </body>
                 </html>
             ";
