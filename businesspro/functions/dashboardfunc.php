@@ -72,8 +72,8 @@
 
             $message = "
                 <html>
-                    <body style=\"background: #fff; text-align: center;\">
-                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$business_logo\">
+                    <body style=\"background: #e8e8e8; text-align: center;\">
+                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/assets/business pro logo.png\">
                         <p style=\"color: #555;\">$messageRun</p>
                     </body>
                 </html>
