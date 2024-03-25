@@ -126,7 +126,7 @@
             while($row = mysqli_fetch_assoc($the_email_query_run)) {
 
                 $recepients = $row["email"];
-                // $recepient_email = implode(", ", $recepients);
+                $recepient_email = implode(", ", $recepients);
 
                 // echo "$recepient_email";
 
@@ -135,7 +135,7 @@
 
                 if($insert_query)
                 {    
-                    $to = $row["email"];
+                    $to = $recepient_email;
                     $subject = "$subject";
 
                     $message = "
