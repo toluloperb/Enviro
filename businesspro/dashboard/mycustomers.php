@@ -132,7 +132,7 @@
                                     $virtualurl = $_SESSION['auth_user']['business_name'];
                                     $newurl = str_replace(' ', '', $virtualurl);
                                 ?>
-                                <input hidden type="text" name="sender" value="support@<?= strtolower($newurl) ?>.com" readonly required>
+                                <input hidden type="text" name="sender" value="<?= strtolower($newurl) ?>" readonly required>
                             </div>
 
                             <button type="submit" style="background:red;" name="bulkEmail">Send</button>
