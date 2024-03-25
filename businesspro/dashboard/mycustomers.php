@@ -245,7 +245,7 @@
                                         $virtualurl = $_SESSION['auth_user']['business_name'];
                                         $newurl = str_replace(' ', '', $virtualurl);
                                     ?>
-                                    <input type="text" name="sender" value="support@<?= strtolower($newurl) ?>.com" readonly required>
+                                    <input type="text" name="sender" value="<?= strtolower($newurl) ?>" readonly required>
                                 </div>
 
                                 <input type="text" name="business_id" value="<?= $_SESSION['auth_user']['user_id'] ?>" hidden required>
