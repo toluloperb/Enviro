@@ -82,8 +82,8 @@
             $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
             // More headers
-            $headers .= 'From: '. $business_name .' <'. $sender .'>' . "\r\n";
-            $headers .= 'Cc: '. $sender .'' . "\r\n";
+            $headers .= 'From: '. $business_name .' <support@goepreneur.com>' . "\r\n";
+            $headers .= 'Cc: support@goepreneur.com' . "\r\n";
 
             $mailprocess = mail($to,$subject,$message,$headers);
     
