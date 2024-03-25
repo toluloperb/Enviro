@@ -43,6 +43,7 @@
                             }
                         }
                     ?>
+                    <?= $_SESSION['auth_user']['business_logo']; ?>
                 </section>
             </main>
         <?php
