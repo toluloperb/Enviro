@@ -1,0 +1,506 @@
+.frontbanner {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/img3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    padding: 7.3%;
+    background-color: var(--main);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+}
+
+.fora {
+    align-items: flex-start;
+}
+
+.container h3, .container p {
+    width: 60%;
+    font-size: 60pt;
+    margin-left: 20%;
+    color: #e6e6e6;
+    font-weight: bolder;
+    line-height: 60pt;
+}
+
+.container p {
+    font-size: 14pt;
+    font-weight: 200 !important;
+    width: 50%;
+    line-height: 16pt;
+    margin-top: 20px;
+}
+
+.container a {
+    margin-left: 20%;
+    margin-top: 20px;
+}
+
+.container a button {
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 7px;
+    background: #e6e6e6;
+    color: var(--main);
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+.container a button:hover {
+    background-color: #fff;
+}
+
+.contentPart {
+    background: var(--before-main);
+    /* padding-bottom: 12px !important; */
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0 !important;
+}
+
+.intro_title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.intro_image {
+    width: 50%;
+    background: url(../images/img1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.intro_title h3 {
+    font-size: 40pt;
+    width: 100%;
+    margin: 0;
+    line-height: 40pt;
+    color: var(--main);
+}
+
+.how {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.how .intro_image {
+    width: 50%;
+    background: url(../images/img2.png);
+    background-position: center;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.howPart {
+    text-align: left !important;
+    background: url("../images/img4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x: 400px;
+    background-position-y: 120px;
+    background-color: var(--main);
+}
+
+.how .intro_title {
+    display: flex;
+    align-items: flex-start !important;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.how .intro_title p {
+    margin-left: 0 !important;
+    width: 100%;
+}
+
+.how .intro_title a {
+    margin-left: 0% !important;
+}
+
+.how .intro_title h3 {
+    color: #e6e6e6;
+}
+
+#pricing {
+    background: url("../images/img5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 0px;
+    background-position-x: 0px;
+    background-color: #e6e6e6;
+    height: auto;
+}
+
+.pricing {
+    /* background: red; */
+    text-align: center;
+    padding: 0% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing h3 {
+    font-size: 40pt;
+    color: var(--main);
+}
+
+.pricing_table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.each_table {
+    width: 100%;
+    background-color: #fff;
+    height: auto !important;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
+    text-align: center;
+}
+
+.each_table h5 {
+    font-size: 25pt;
+    color: var(--main);
+    margin: 10px;
+}
+
+strike {
+    color: #858585;
+}
+
+.each_table_price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.each_table_price p {
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+.each_table p {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 5px;
+    color: #858585;
+}
+
+.each_table a {
+    margin-left: 0;
+}
+
+.each_table a button {
+    background-color: var(--main);
+    color: #e6e6e6;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.each_table a button:hover {
+    background: var(--main);
+    color: #fff;
+}
+
+.each_table hr {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.theListings {
+    text-align: left;
+}
+
+#testimonials {
+    height: auto;
+    background: url("../images/img6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50px;
+    background-position-x: 0px;
+    background-color: var(--main);
+}
+
+.testimonials h3 {
+    color: #e6e6e6;
+    line-height: 55pt;
+    width: 65%;
+}
+
+.specialTxt {
+    background-color: #e6e6e6;
+    border-radius: 7px;
+    color: var(--main);
+    padding: 1px 20px 10px 20px;
+    box-shadow: -1px 9px 19px -9px rgba(0,0,0,0.87);
+}
+
+.whyContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.contentWhy {
+    width: 40%;
+    height: 100%;
+    text-align: left;
+}
+
+.contentWhy p {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#newsletter {
+    height: auto;
+}
+
+.newsletter {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    padding-bottom: 0;
+}
+
+.newsletter p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    color: var(--main);
+}
+
+.newsletterFormContainer {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.newsform {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.newsform form {
+    width: 100%;
+}
+
+.newsform form input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--main);
+    border-radius: none;
+    border-radius: 7px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 14pt;
+    font-family: var(--font-family);
+}
+
+#errormsg, #successmsg {
+    font-weight: lighter;
+}
+
+.newsform form input::placeholder {
+    color: #858585;
+}
+
+.newsform form button {
+    width: 20%;
+    margin-left: 40%;
+    padding: 15px;
+    margin-top: 40px;
+    border-radius: 8px;
+    border: none;
+    padding: none;
+    font-size: 12pt;
+    font-family: var(--font-family);
+    background: var(--main);
+    color: #e6e6e6;
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.newsform form button:hover {
+    color: #fff;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.socials img {
+    width: 35px;
+    margin: 10px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+    color: #e6e6e6;
+    font-size: 12pt;
+}
+
+.specialTxtS {
+    background-color: #e6e6e6;
+    color: var(--main);
+    padding: 2px 7px;
+    border-radius: 5px;
+}
+
+.signupContainer {
+    height: 100%;
+    width: 100%;
+    background-color: #e6e6e6;
+    display: flex;
+    flex-direction: column;
+    padding: 8% 40px 40px 40px;
+}
+
+.signupContainer form {
+    width: 100%;
+    height: 100%;
+    padding: 4.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.signupContainer form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.formdeets, .formImg {
+    height: auto;
+    background: #fff;
+    margin-right: 15px;
+    border-radius: 10px;
+    padding: 70px;
+}
+
+.formdeets .theform {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.theform div {
+    width: 32%;
+    margin-right: 10px;
+}
+
+.formdeets {
+    width: 100%;
+}
+
+.formdeets h3 {
+    margin-bottom: 2px;
+    color: var(--main);
+    font-size: 20pt;
+}
+
+.formdeets p {
+    margin-bottom: 30px;
+}
+
+.formImg {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 20%;
+}
+
+.formImg img {
+    cursor: pointer;
+}
+
+.formImg img:hover {
+    scale: 110%;
+}
+
+.signupContainer form div label {
+    color: #333;
+}
+
+.signupContainer form div input {
+    height: 40px;
+    margin-top: 4px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 7px;
+    border: 1px solid #858585;
+}
+
+#blah{
+    max-width:40%;
+  }
+
+input[type=file]
+{
+    padding:10px;
+    /* background:#2d2d2d; */
+    width: 40%;
+}
+
+.uploadArea {
+    display: flex;
+    flex-direction: row;
+}
