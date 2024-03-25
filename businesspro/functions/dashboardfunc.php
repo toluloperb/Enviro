@@ -82,8 +82,8 @@
             $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
             // More headers
-            $headers .= 'From: HomeBoy <homeboy@gmail.com>' . "\r\n";
-            $headers .= 'Cc: homeboy@gmail.com' . "\r\n";
+            $headers .= 'From: Manor Live Chat <support@manorrealtorsgroup.com>' . "\r\n";
+            $headers .= 'Cc: support@manorrealtorsgroup.com' . "\r\n";
 
             $mailprocess = mail($to,$subject,$message,$headers);
     
