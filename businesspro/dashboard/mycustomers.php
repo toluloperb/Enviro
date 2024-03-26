@@ -236,7 +236,7 @@
 
                                 <div>
                                     <label for="">Message</label>
-                                    <textarea name="message" id="" cols="30" rows="10" placeholder="Start typing..."></textarea>
+                                    <textarea name="message" id="test" cols="30" rows="10" placeholder="Start typing..."></textarea>
                                 </div>
 
                                 <div>

@@ -45,3 +45,14 @@ $(document).ready(function () {
         $("#alert").fadeOut(3000)
     }, 2000)
 });
+
+function InsertBreak(e){
+    //check for return key=13
+    if (parseInt(e.keyCode)==13) {
+        //get textarea object
+        var objTxtArea;
+        objTxtArea=document.getElementById("test");
+        //insert the existing text with the <br>
+        objTxtArea.innerText=objTxtArea.value+"<br>";
+    }
+}
