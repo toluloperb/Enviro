@@ -139,7 +139,7 @@
                 if($insert_query)
                 {    
                     $to = $recepientsAll;
-                    $subject = "$subject";
+                    $subject = "$subjectRun";
 
                     $message = "
                         <html>
