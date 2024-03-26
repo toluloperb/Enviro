@@ -62,6 +62,8 @@
         $business_logo = $_SESSION['auth_user']['business_logo'];
         $type = "single";
 
+        $logo = str_replace(' ', '%20', $business_logo);
+
         $insert = "INSERT INTO emails (type,business_id,recepient_email, subject, message) VALUES('$type','$business_id','$recepient_email','$subjectRun','$messageRun')";
         $insert_query = mysqli_query($con, $insert);
 
@@ -73,7 +75,7 @@
             $message = "
                 <html>
                     <body style=\"background: #e8e8e8; text-align: center; padding: 10%;\">
-                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/assets/images/businesspro%20logo.png\">
+                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$logo\">
                         <p style=\"color: #555;\">$messageRun</p>
                     </body>
                 </html>
@@ -120,6 +122,9 @@
         $type = "bulk";
         $business_email = $_SESSION['auth_user']['user_email'];
 
+        $business_logo = $_SESSION['auth_user']['business_logo'];
+        $logo = str_replace(' ', '%20', $business_logo);
+
         // The query that loads all the email address from the DAtabase
         $the_email_query = "SELECT GROUP_CONCAT(email separator ',') as email FROM customers WHERE business_id = '$business_id'";
         $the_email_query_run = mysqli_query($con, $the_email_query);
@@ -144,8 +149,9 @@
 
                     $message = "
                         <html>
-                            <body>
-                                <p>$messageRun</p>
+                            <body style=\"background: #e8e8e8; text-align: center; padding: 10%;\">
+                                <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$logo\">
+                                <p style=\"color: #555;\">$messageRun</p>
                             </body>
                         </html>
                     ";
