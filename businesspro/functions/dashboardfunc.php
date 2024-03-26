@@ -74,8 +74,20 @@
 
             $message = "
                 <html>
+                    <head>
+                        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0\" />
+                    </head>
+                    <style>
+                        @media only screen and (max-width: 720px)
+                        {
+                            img {
+                                width: 100% !important;
+                            }
+                        }
+                    </style>
                     <body style=\"background: #e8e8e8; text-align: center; padding: 10%;\">
-                        <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$logo\">
+                        <img style=\"width: 30%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$logo\">
+                        <br><br>
                         <p style=\"color: #555;\">$messageRun</p>
                     </body>
                 </html>
@@ -151,6 +163,7 @@
                         <html>
                             <body style=\"background: #e8e8e8; text-align: center; padding: 10%;\">
                                 <img style=\"width: 60%;\" src=\"https://manorrealtorsgroup.com/businesspro/uploads/$logo\">
+                                <br><br>
                                 <p style=\"color: #555;\">$messageRun</p>
                             </body>
                         </html>
