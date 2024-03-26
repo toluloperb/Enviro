@@ -118,6 +118,7 @@
         $sender = $_POST['sender'];
         $business_name = $_SESSION['auth_user']['business_name'];
         $type = "bulk";
+        $business_email = $_SESSION['auth_user']['user_email'];
 
         // The query that loads all the email address from the DAtabase
         $the_email_query = "SELECT GROUP_CONCAT(email separator ',') as email FROM customers WHERE business_id = '$business_id'";
@@ -155,6 +156,7 @@
 
                     // More headers
                     $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\r\n";
+                    $headers .= 'Reply-To: '.$business_email."\r\n" .
                     $headers .= 'Cc: '. $sender .'@manorrealtorsgroup.com' . "\r\n";
                     $headers .= 'BCC: Someone<someone@example.com>' . "\r\n"; 
                     $headers .= 'X-Mailer: PHP/' . phpversion();
