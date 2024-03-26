@@ -163,7 +163,7 @@
                     );
                     $headers[] = 'Bcc: ' . $to . "\r\n";
 
-                    $mailprocess = mail($to,$subject,$message, implode("\r\n", $headers));
+                    $mailprocess = mail($to,$subject,$message, $headers);
             
                     if($mailprocess)
                     {
