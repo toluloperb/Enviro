@@ -156,7 +156,8 @@
                     // More headers
                     $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\r\n";
                     $headers .= 'Cc: '. $sender .'@manorrealtorsgroup.com' . "\r\n";
-                    $headers .= 'BCC: Someone<someone@example.com>' . "\r\n";
+                    $headers .= 'BCC: Someone<someone@example.com>' . "\r\n"; 
+                    $headers .= 'X-Mailer: PHP/' . phpversion();
 
                     $mailprocess = mail($to,$subject,$message,$headers);
             
