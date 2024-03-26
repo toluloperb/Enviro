@@ -149,14 +149,16 @@
                         </html>
                     ";
 
+                    // Always set content-type when sending HTML email
                     $headers = "MIME-Version: 1.0" . "\r\n";
                     $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
                     // More headers
                     $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\r\n";
+                    $headers .= 'Cc: '. $sender .'@manorrealtorsgroup.com' . "\r\n";
                     $headers .= 'BCC: Someone<someone@example.com>' . "\r\n";
 
-                    $mailprocess = mail($to,$subject,$message, $headers);
+                    $mailprocess = mail($to,$subject,$message,$headers);
             
                     if($mailprocess)
                     {
