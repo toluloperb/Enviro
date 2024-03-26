@@ -120,20 +120,20 @@
         $type = "bulk";
 
         // The query that loads all the email address from the DAtabase
-        $the_email_query = "SELECT * FROM customers WHERE business_id = '$business_id'";
+        $the_email_query = "SELECT GROUP_CONCAT(email) FROM customers WHERE business_id = '$business_id'";
         $the_email_query_run = mysqli_query($con, $the_email_query);
 
         if (mysqli_num_rows($the_email_query_run) > 0) {
 
             while($row = mysqli_fetch_assoc($the_email_query_run)) {
 
-                $recepientsAll = $row["email"];
-                $recepients[] = $row["email"];
-                $recepient_email = implode("; ", $recepients);
+                $recepientsAll = $row;
+                // $recepients[] = $row["email"];
+                // $recepient_email = implode("; ", $recepients);
 
                 // echo "$recepient_email";
 
-                $insert = "INSERT INTO emails (type,business_id,recepient_email, subject, message) VALUES('$type','$business_id','$recepient_email','$subjectRun','$messageRun')";
+                $insert = "INSERT INTO emails (type,business_id,recepient_email, subject, message) VALUES('$type','$business_id','$recepientsAll','$subjectRun','$messageRun')";
                 $insert_query = mysqli_query($con, $insert);
 
                 if($insert_query)
