@@ -151,17 +151,17 @@
                     ";
 
                     // Always set content-type when sending HTML email
-                    $headers .= "MIME-Version: 1.0" . "\\r\ ";
-                    $headers .= "Content-type:text/html;charset=iso-8859-1" . "\\r\ ";
+                    $headers .= "MIME-Version: 1.0" . "\n";
+                    $headers .= "Content-type:text/html;charset=iso-8859-1" . "\n";
 
                     // More headers
-                    $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\\r\ ";
+                    $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\n";
                     $headers .= array(
                         'From' => 'webmaster@example.com',
                         'Reply-To' => 'webmaster@example.com',
                         'X-Mailer' => 'PHP/' . phpversion()
                     );
-                    $headers .= 'Bcc: ' . $to . "\\r\ ";
+                    $headers .= 'Bcc: ' . $to . "\n";
 
                     $mailprocess = mail($to,$subject,$message, $headers);
             
