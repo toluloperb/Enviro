@@ -154,7 +154,7 @@
 
                     // More headers
                     $headers .= 'From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>' . "\r\n";
-                    $headers .= "Bcc: " .  $to . "\r\n";
+                    $headers .= 'BCC: Someone<someone@example.com>' . "\r\n";
 
                     $mailprocess = mail($to,$subject,$message, $headers);
             
