@@ -155,8 +155,7 @@
                     $headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
 
                     // More headers
-                    $headers .= "From: '. $business_name .' <'. $sender .'@manorrealtorsgroup.com>'\r\n" .
-                    "X-Mailer: php\r\n";
+                    $headers .= "From: [email protected]\r\n" . "X-Mailer: php";
 
                     $mailprocess = mail($to,$subject,$message,$headers);
             
