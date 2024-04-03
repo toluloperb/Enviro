@@ -1,14 +1,14 @@
 <?php
 
-    $host = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "manorrealtors";
-
     // $host = "localhost";
-    // $username = "manojlmu_manorrealtor";
-    // $password = "Trodpen2022*";
-    // $database = "manojlmu_manorrealtor";
+    // $username = "root";
+    // $password = "";
+    // $database = "manorrealtors";
+
+    $host = "localhost";
+    $username = "manojlmu_manorrealtor";
+    $password = "Trodpen2022*";
+    $database = "manojlmu_manorrealtor";
 
     $con = mysqli_connect($host, $username, $password, $database);
 
