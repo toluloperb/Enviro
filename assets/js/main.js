@@ -92,7 +92,7 @@ $(function() {
     })
 
     $('#nextImage').click(function() {
-        document.getElementById('prodImg').style.display = 'none';
+        document.getElementById('prodImg').style.display = 'flex';
     })
 
     $(window).resize(function() {

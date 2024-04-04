@@ -1,7 +1,5 @@
 <?php
     session_start();
-    if (isset($_SESSION['auth']))
-    {
         include("includes/header.php");
         include("includes/navbar.php");
         include("config/dbcon.php");
@@ -28,7 +26,7 @@
                                                 foreach($select_query as $data)
                                                 {
                                                     ?>
-                                                        <img id="nextImage" src="<?php echo 'uploads/'. $data["images"] ?>"/>
+                                                        <a href="?id=<?= $data["id"] ?>"><img id="nextImage" src="<?php echo 'uploads/'. $data["images"] ?>" /></a>
                                                     <?php
                                                 }
                                             }
@@ -170,10 +168,4 @@
         <?php
 
         include("includes/footer.php");
-    }
-    else
-    {
-        header("Location: login?error=Login to continue");
-        exit();
-    }
 ?>
