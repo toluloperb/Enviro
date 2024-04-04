@@ -254,7 +254,7 @@
                 </a>
             </div>
             <div class="learnmoreBtn">
-                <a href=""><button>See more</button></a>
+                <a href="products"><button>See more</button></a>
             </div>
         </section>
 

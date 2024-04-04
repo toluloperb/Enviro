@@ -31,6 +31,10 @@ $(function() {
         $(this).addClass('active').siblings().removeClass('active');
     })
 
+    setTimeout(function(){
+        $("#alert").fadeOut(3000)
+    }, 2000)
+
     // $("#allsessions").load(" #allsessions > *");
     // var currentUrl = document.getElementById("chathistory").innerHTML = window.location.href;
     // $('#chat_session').load(currentUrl);

@@ -12,11 +12,31 @@
 
                     <div class="then productsThen">
                         <h3>Products</h3>
+                        <?php
+                            if(isset($_SESSION['status']))
+                            {
+                                $response = $_SESSION['status'];
+                                if($response)
+                                {
+                                    ?>
+                                        <div class="alert" id="alert" role="alert">
+                                            <p><?= $response ?></p>
+                                        </div>
+                                    <?php
+                                    unset($_SESSION['status']);
+                                }
+                            }
+                        ?>
 
-                        <form action="" method="post">
+                        <form action="../functions/adminFunction.php" method="post" enctype="multipart/form-data">
                             <div class="addproductForm">
                                 <div class="imgPart">
+                                    <div>
+                                        <label for="">Product Images</label>
+                                        <input type="file" name="images[]" multiple required>
+                                    </div>
 
+                                    <div class="prev" id="imgs"></div>
                                 </div>
                                 <div class="descPart">
                                     <div>

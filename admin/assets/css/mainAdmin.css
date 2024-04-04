@@ -500,3 +500,36 @@ body {
     background-color: #0000A8;
     padding: 15px 35px 15px 35px;
 }
+
+.imgPart div {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgPart div input {
+    margin-top: 10px;
+    border: 1px solid #333;
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.prev {
+    width: 95%;
+    height: 79.5%;
+    margin-top: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#alert, #smsAlert {
+    width: auto;
+    height: auto;
+    position: absolute;
+    border-radius: 8px;
+    background-color: #008000;
+    padding: 14px 20px;
+    color: #fff;
+    font-size: 16px;
+    animation: .2s slide-right;
+}
