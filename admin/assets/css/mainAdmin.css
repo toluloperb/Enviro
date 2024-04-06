@@ -274,7 +274,15 @@ body {
     height: 10%;
 }
 
-.emailButtons button {
+.emailButtons a {
+    width: 100%;
+    outline: none;
+    background: var(--main);
+    font-family: var(--font-family);
+}
+
+.emailButtons a button {
+    height: 100%;
     width: 100%;
     padding: 6px 18px 6px 18px;
     border: none;
@@ -282,7 +290,6 @@ body {
     font-family: var(--font-family);
     color: #fff;
     cursor: pointer;
-    outline: none;
 }
 
 .emailButtons button:hover {
@@ -512,6 +519,16 @@ body {
     width: 95%;
     padding: 10px;
     border-radius: 5px;
+}
+
+.subMenu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.subMenu a {
+    color: var(--before-main);
 }
 
 #blahs {

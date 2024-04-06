@@ -17,52 +17,6 @@
                             <div class="containerForListings" id="containerForListings">
                                 <div class="listings" id="unread">
                                     <?php
-                                        $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'New' ORDER BY id DESC";
-                                        $select_sessions_run = mysqli_query($con, $select_sessions);
-                                        
-                                        if(mysqli_num_rows($select_sessions_run) > 0)
-                                        {
-                                            foreach($select_sessions_run as $session)
-                                            {
-                                                ?>
-                                                    <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
-                                                    <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
-                                                <?php
-                                            }
-                                        }
-                                        else
-                                        {
-                                            ?>
-                                                <p>No one yet!</p>
-                                            <?php
-                                        }
-                                    ?>
-                                </div>
-                                <div class="listings" id="read">
-                                    <?php
-                                        $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'Read' ORDER BY id DESC";
-                                        $select_sessions_run = mysqli_query($con, $select_sessions);
-                                        
-                                        if(mysqli_num_rows($select_sessions_run) > 0)
-                                        {
-                                            foreach($select_sessions_run as $session)
-                                            {
-                                                ?>
-                                                    <input type="text" id="session_id" value="<?= $session["session_id"] ?>" hidden>
-                                                    <a href="chathistory?session=<?= $session["session_id"] ?>"><p><?= $session["session_id"] ?></p></a>
-                                                <?php
-                                            }
-                                        }
-                                        else
-                                        {
-                                            ?>
-                                                <p>No one yet!</p>
-                                            <?php
-                                        }
-                                    ?>
-                                </div>
-                                <div class="listings" id="ended">
-                                    <?php
                                         $select_sessions = "SELECT * FROM user_sessions WHERE session_status = 'Ended' ORDER BY id DESC";
                                         $select_sessions_run = mysqli_query($con, $select_sessions);
                                         
