@@ -40,19 +40,40 @@
                             </div>
                         </div>
 
-                        <div class="sessions chat_sessions">
-                            <h3 style="margin-left: 15px">Details</h3>
-                            <div class="chat read_mail" id="chat_history">
-                                <p>Full Name : <?= $session["fname"] ?> <?= $session["lname"] ?></p>
-                                <p>Contact Number : <?= $session["tel"] ?></p>
-                                <p>Email : <?= $session["email"] ?></p>
-                                <p>Interested In : <?= $session["services"] ?></p>
-                                <p>Additional Info : <?= $session["additional_info"] ?></p>
-                                <br><hr><br>
-                                <p>Date : <?= $session["date"] ?></p>
-                                <p>Time : <?= $session["time"] ?></p>
-                            </div>
-                        </div>
+                        <?php
+                            if(isset($_GET["id"]))
+                            {
+                                ?>
+                                    <div class="sessions chat_sessions">
+                                    <h3 style="margin-left: 15px">Details</h3>
+                                    <div class="chat read_mail" id="chat_history">
+                                    <?php
+                                        $id = $_GET["id"];
+                                        $select_sessions_details = "SELECT * FROM mail WHERE id = '$id' ORDER BY id DESC";
+                                        $select_sessions_details_run = mysqli_query($con, $select_sessions_details);
+
+                                        if($select_sessions_details_run)
+                                        {
+                                            foreach ($select_sessions_details_run as $data)
+                                            {
+                                                ?>
+                                                    <p>Full Name : <?= $data["fname"] ?> <?= $data["lname"] ?></p>
+                                                    <p>Contact Number : <?= $data["tel"] ?></p>
+                                                    <p>Email : <?= $data["email"] ?></p>
+                                                    <p>Interested In : <?= $data["services"] ?></p>
+                                                    <p>Additional Info : <?= $data["additional_info"] ?></p>
+                                                    <br><hr><br>
+                                                    <p>Date : <?= $data["date"] ?></p>
+                                                    <p>Time : <?= $data["time"] ?></p>
+                                                <?php
+                                            }
+                                        }
+                                    ?>
+                                    </div>
+                                </div>
+                                <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
