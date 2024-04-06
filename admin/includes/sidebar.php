@@ -16,6 +16,7 @@
             <a href="products">Products</a>
             <a href="contact_forms">Contact Forms</a>
             <a href="chats">Chats</a>
+            <a href="news">News</a>
         </li>
     </div>
     

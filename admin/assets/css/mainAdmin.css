@@ -514,11 +514,10 @@ body {
     border-radius: 5px;
 }
 
-.prev {
+#blahs {
     width: 95%;
-    height: 79.5%;
+    height: auto;
     margin-top: 10px;
-    border: 1px solid #333;
     border-radius: 5px;
 }
 
@@ -532,4 +531,51 @@ body {
     color: #fff;
     font-size: 16px;
     animation: .2s slide-right;
+}
+
+.toppings {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toppings h3 {
+    color: #333;
+}
+
+.toppings button {
+    padding: 7px 12px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    color: #333;
+    cursor: pointer;
+}
+
+.list-table {
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.list-table table {
+    font-family: var(--font-family);
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .list-table td, .list-table th {
+    border: 1px solid #a7a7a7;
+    text-align: left;
+    padding: 8px;
+}
+
+.list-table tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.table_sn {
+    width: 70px;
 }

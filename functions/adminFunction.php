@@ -78,4 +78,32 @@
         $insert_query = "INSERT INTO productsfamily (product_id,title) VALUES ('$product_id','$title')";
         $insert_query_run = mysqli_query($con, $insert_query);
     }
+
+    else if(isset($_POST["addNews"]))
+    {
+        $title = $_POST["title"];
+        $updateStory = $_POST["description"];
+
+        $image = $_FILES['image']['name'];
+
+        $Uploadpath = "../uploads/";
+
+        $image_ext = pathinfo($image, PATHINFO_EXTENSION);
+        $postImg = time(). ' ' . $image;
+
+        $insert = "INSERT into news (title,story,image) VALUES('$title','$updateStory','$postImg')";
+        $insert_query = mysqli_query($con, $insert);
+
+        if($insert_query)
+        {
+            $move = move_uploaded_file($_FILES['image']['tmp_name'], $Uploadpath.'/'.$postImg);
+
+            if($move)
+            {
+                $_SESSION["status"] = "Success";
+                header("Location: ".$_SERVER['HTTP_REFERER']);
+                exit();
+            }
+        }
+    }
 ?>

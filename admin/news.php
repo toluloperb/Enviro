@@ -13,8 +13,8 @@
 
                 <div class="then productsThen">
                     <div class="toppings">
-                        <h3>Products</h3>
-                        <a href="add-product"><button>Add New</button></a>
+                        <h3>News</h3>
+                        <a href="add-news"><button>Add New</button></a>
                     </div>
 
                     <div class="list-table">
@@ -22,14 +22,12 @@
                             <tr>
                                 <th class="table_sn">S/N</th>
                                 <th>Title</th>
-                                <th>Price</th>
-                                <th>Location</th>
-                                <th>Status</th>
+                                <th>Date</th>
                                 <th>Action</th>
                             </tr>
                             
                                 <?php
-                                    $select_properties = "SELECT * FROM productsfamily";
+                                    $select_properties = "SELECT * FROM news";
                                     $select_properties_run = mysqli_query($con, $select_properties);
 
                                     if(mysqli_num_rows($select_properties_run) > 0)
@@ -40,24 +38,8 @@
                                                 <tr>
                                                     <td><?= $data["id"] ?></td>
                                                     <td><?= $data["title"] ?></td>
-                                                    <?php
-                                                        $product_id = $data["product_id"];
-                                                        $select_properties_main = "SELECT * FROM products WHERE product_id = '$product_id' LIMIT 1";
-                                                        $select_properties_main_run = mysqli_query($con, $select_properties_main);
-
-                                                        if(mysqli_num_rows($select_properties_main_run) > 0)
-                                                        {
-                                                            foreach($select_properties_main_run as $maindata)
-                                                            {
-                                                                ?>
-                                                                    <td><?= $maindata["price"] ?></td>
-                                                                    <td><?= $maindata["address"] ?>, <?= $maindata["city"] ?></td>
-                                                                <?php
-                                                            }
-                                                        }
-                                                    ?>
-                                                    <td></td>
-                                                    <td><a href="editproperty?prod_id=<?= $data["product_id"] ?>"><button style="padding: 4px 9px 4px 9px;">Edit</button></a></td>
+                                                    <td><?= $data["date"] ?></td>
+                                                    <td><a href="editnews?q=<?= $data["id"] ?>"><button style="padding: 4px 9px 4px 9px;">Edit</button></a></td>
                                                 </tr>
                                             <?php
                                         }

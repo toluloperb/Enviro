@@ -86,3 +86,29 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add a message every 2 seconds
     setInterval(addMessage, 1000);
 });
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blahs')
+                .attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function InsertBreak(e){
+    //check for return key=13
+    if (parseInt(e.keyCode)==13) {
+        //get textarea object
+        var objTxtArea;
+        objTxtArea = document.getElementById("test");
+        
+        //insert the existing text with the <br>
+        objTxtArea.innerText=objTxtArea.value+"<br>";
+    }
+
+}

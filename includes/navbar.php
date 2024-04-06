@@ -6,8 +6,8 @@
     <div class="menu_list">
         <li>
             <a href="index">Home</a>
-            <a href="">Our services</a>
-            <a href="">News</a>
+            <a href="products">Our services</a>
+            <a href="news">News</a>
             <a href="index#clients">Clients</a>
             <a href="">Careers</a>
             <a href="contact">Contact us</a>
@@ -33,8 +33,8 @@
 <div class="mobile_list" id="mobile_lists">
     <li>
         <a href="index">Home</a>
-        <a href="">Our services</a>
-        <a href="">News</a>
+        <a href="products">Our services</a>
+        <a href="news">News</a>
         <a href="index#clients">Clients</a>
         <a href="">Careers</a>
         <a href="contact">Contact us</a>

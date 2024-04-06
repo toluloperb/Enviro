@@ -91,10 +91,6 @@ $(function() {
         document.getElementById('mobile_chat_btn').style.display = 'flex';
     })
 
-    $('#nextImage').click(function() {
-        document.getElementById('prodImg').style.display = 'flex';
-    })
-
     $(window).resize(function() {
         document.getElementById('mobile_lists').style.display = 'none';
         document.getElementById('menu_btn_close').style.display = 'none';
