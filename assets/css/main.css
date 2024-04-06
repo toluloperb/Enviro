@@ -789,6 +789,7 @@ hr {
 @media only screen and (max-width: 720px) {
     .chat_tools {
         height: 10% !important;
+        width: 100% !important;
     }
 
     #chat_history_mobile {
