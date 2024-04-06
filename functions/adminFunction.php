@@ -13,7 +13,7 @@
         if($endSessionIdRun)
         {
             $_SESSION["status"] = "Session Ended";
-            header("Location: ../admin/chats.php");
+            header("Location: ../admin/readchats");
             exit();
         }
     }
