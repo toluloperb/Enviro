@@ -50,7 +50,7 @@
 
                         <div class="single">
                             <label for="">Additional Info</label>
-                            <textarea name="comment" id="" cols="30" rows="10"></textarea>
+                            <textarea name="comment" id="test" cols="30" rows="10"></textarea>
                         </div>
 
                         <div class="contactBtns">

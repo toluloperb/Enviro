@@ -174,3 +174,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add a message every 2 seconds
     setInterval(addMessage, 1000);
 });
+
+function InsertBreak(e){
+    //check for return key=13
+    if (parseInt(e.keyCode)==13) {
+        //get textarea object
+        var objTxtArea;
+        objTxtArea = document.getElementById("test");
+        
+        //insert the existing text with the <br>
+        objTxtArea.innerText=objTxtArea.value+"<br>";
+    }
+
+}

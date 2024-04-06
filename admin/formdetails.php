@@ -61,7 +61,7 @@
                                                     <p>Contact Number : <?= $data["tel"] ?></p>
                                                     <p>Email : <?= $data["email"] ?></p>
                                                     <p>Interested In : <?= $data["services"] ?></p>
-                                                    <p>Additional Info : <?= $data["additional_info"] ?></p>
+                                                    <p>Additional Info : <?= nl2br ($data["additional_info"]) ?></p>
                                                     <br><hr><br>
                                                     <p>Date : <?= $data["date"] ?></p>
                                                     <p>Time : <?= $data["time"] ?></p>
