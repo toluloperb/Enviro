@@ -68,26 +68,30 @@ $(function() {
             data: $('#start_session_form').serialize(),
             dataType: "text",
             success: function (response) {
-                document.getElementById('livechat_mobile').style.display = 'block';
-
-                document.getElementById('main').style.display = 'none';
+                document.getElementById('backdrop').style.display = 'none';
 
                 document.getElementById('mobile_chat_btn').style.display = 'none';
+
+                document.getElementById('stick_livechat').style.display = 'block';
+
+                document.getElementById('stick_livechat_button').style.display = 'none';
+
+                document.getElementById('stick_livechat_button_close').style.display = 'flex';
                 
-                document.getElementById('mobile_chat_form').reset();
+                document.getElementById('chat_form').reset();
 
                 document.getElementById('email').value = id;
-                
+
                 window.history.pushState("null", "null", "?id=" + id);
 
-                $("#chat_history_mobile").load(" #chat_history_mobile > *");
+                $("#chat_history").load(" #chat_history > *");
             }
         });
     })
 
     $('#closeChatBtn').click(function() {
-        document.getElementById('livechat_mobile').style.display = 'none';
-        document.getElementById('main').style.display = 'block';
+        document.getElementById('stick_livechat').style.display = 'none';
+        document.getElementById('backdrop').style.display = 'block';
         document.getElementById('mobile_chat_btn').style.display = 'flex';
     })
 

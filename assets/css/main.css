@@ -564,19 +564,6 @@ hr {
     height: 100%;
 }
 
-.closeBtn {
-    padding-top: 22%;
-    text-align: right;
-}
-
-.closeBtn button {
-    margin-right: 20px;
-    border: 0;
-    background: none;
-    color: #fff;
-    font-size: 13pt;
-}
-
 #chatIcon {
     width: 50px;
 }
@@ -643,9 +630,13 @@ hr {
     display: none;
 }
 
+.closeBtn {
+    display: none;
+}
+
 @media only screen and (max-width: 720px) {
     .livechat_button, .livechat_button_close {
-        display: none;
+        display: none !important;
         left: 0%;
         z-index: 0;
         top: 0%;
@@ -657,7 +648,7 @@ hr {
 
     #stick_livechat {
         width: 100%;
-        height: auto;
+        height: 100%;
         background: var(--main);
         /* position: -webkit-sticky; */
         position: fixed;
@@ -668,6 +659,21 @@ hr {
         display: none;
         border-radius: 10px;
         -webkit-backface-visibility: hidden;
+        padding: 0;
+    }
+
+    .closeBtn {
+        padding-top: 8%;
+        text-align: right;
+        display: block;
+    }
+
+    .closeBtn button {
+        margin-right: 20px;
+        border: 0;
+        background: none;
+        color: #fff;
+        font-size: 13pt;
     }
 }
 
