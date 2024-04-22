@@ -212,12 +212,12 @@
         </div>
 
         <section class="backdrop" id="backdrop">
-            <video class="" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
+        <video class="elementor-video" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
         </section>
 
         <section class="explore_prop">
             <div class="title">
-                <h3>Explore</h3>
+                <h3>Explore Manor Realtors Group</h3>
             </div>
             <div class="products">
                 <div class="eachproduct" style="background: url(assets/images/home.webp);">
@@ -248,7 +248,7 @@
 
         <section class="explore_prop">
             <div class="title" style="padding-top: 0px;">
-                <h3 >Featured Properties</h3>
+                <h3 >Latest Listings</h3>
                 <p>Explore our newest, luxurious and yet affordable properties.</p>
             </div>
             <div class="products">
@@ -301,6 +301,39 @@
                 <div class="award_logo">
                     <img src="assets/images/NRPA-LOGO_light.png" alt="">
                     <img src="assets/images/tags-award.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="records">
+            <div class="recordCover">
+                <h3>INSPIRED BY SHEER PERFORMANCE? WE’VE GOT YOUR NUMBERS.</h3>
+                <div class="recordContainer">
+                    <div class="eachRecord">
+                        <p><strong>500+</strong></p>
+                        <p>Transaction Completed</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="eachRecord">
+                        <p><strong>10</strong></p>
+                        <p>Average days our listings are on the market</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="eachRecord">
+                        <p><strong>100+</strong></p>
+                        <p>Number of 5-star reviews on Google</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="eachRecord">
+                        <p><strong>70%</strong></p>
+                        <p>Percentage of closings that are the direct result of referrals and repeat business</p>
+                    </div>
                 </div>
             </div>
         </section>

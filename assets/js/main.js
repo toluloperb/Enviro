@@ -16,6 +16,23 @@ $(function() {
         document.getElementById('stick_livechat_button').style.display = 'flex';
     })
 
+    $('#menu_btn_blue').click(function() {
+        document.getElementById('mobile_lists').style.display = 'block';
+        document.getElementById('menu_btn_close_blue').style.display = 'block';
+        document.getElementById('menu_btn_blue').style.display = 'none';
+        document.getElementById('stick_livechat').style.display = 'none';
+        document.getElementById('stick_livechat_button').style.display = 'none';
+        document.getElementById('stick_livechat_button_close').style.display = 'none';
+    })
+
+    $('#menu_btn_close_blue').click(function() {
+        document.getElementById('mobile_lists').style.display = 'none';
+        document.getElementById('menu_btn_close_blue').style.display = 'none';
+        document.getElementById('menu_btn_blue').style.display = 'block';
+        document.getElementById('stick_livechat').style.display = 'none';
+        document.getElementById('stick_livechat_button').style.display = 'flex';
+    })
+
     $('#stick_livechat_button').click(function() {
         document.getElementById('stick_livechat').style.display = 'block';
         document.getElementById('stick_livechat_button').style.display = 'none';
@@ -191,3 +208,32 @@ function InsertBreak(e){
     }
 
 }
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 80) {
+            $(".navbar").css("background" , "#fff");
+            $(".mobileNav").css("background" , "#fff");
+            $(".links").css("color" , "#0000A8");
+            document.getElementById('blueLogo').style.display = 'block';
+            document.getElementById('blueLogoMobile').style.display = 'block';
+            document.getElementById('whiteLogo').style.display = 'none';
+            document.getElementById('whiteLogoMobile').style.display = 'none';
+            document.getElementById('menu_buttonblue').style.display = 'block';
+            document.getElementById('menu_buttonwihte').style.display = 'none';
+        }
+
+        else {
+            $(".navbar").css("background" , "000");
+            $(".mobileNav").css("background" , "000");
+            $(".links").css("color" , "#fff");
+            document.getElementById('blueLogo').style.display = 'none';
+            document.getElementById('blueLogoMobile').style.display = 'none';
+            document.getElementById('whiteLogo').style.display = 'block';
+            document.getElementById('whiteLogoMobile').style.display = 'block';
+            document.getElementById('menu_buttonblue').style.display = 'none';
+            document.getElementById('menu_buttonwihte').style.display = 'block';
+        }
+    })
+});
