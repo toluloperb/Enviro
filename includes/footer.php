@@ -37,7 +37,7 @@
     </div>
     <br>
         <hr>
-            <p>© 2024 · FIBE Business Agency</p>
+            <p>© 2024 Manor Realtors Group</p>
         <hr>
     <br>
 </footer>

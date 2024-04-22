@@ -16,15 +16,9 @@
 </section>
 
 <div class="mobileNav">
-    <a id="whiteLogoMobile" href="index"><img style="height: 40px" src="assets/images/manor-logo-white.png" alt=""></a>
-    <a id="blueLogoMobile" style="display:none" href="index"><img style="height: 40px; " src="assets/images/manor-logo.png" alt=""></a>
+    <a id="blueLogoMobile" href="index"><img style="height: 40px; " src="assets/images/manor-logo.png" alt=""></a>
 
-    <div class="menu_button" style="display:none" id="menu_buttonwihte" >
-        <button id="menu_btn"><img src="assets/images/open white.png" alt=""></button>
-        <button id="menu_btn_close" style="display:none"><img src="assets/images/close white.png" alt=""></button>
-    </div>
-
-    <div class="menu_button" style="display:none" id="menu_buttonblue" >
+    <div class="menu_button" id="menu_buttonblue" >
         <button id="menu_btn_blue"><img src="assets/images/menu.png" alt=""></button>
         <button id="menu_btn_close_blue" style="display:none"><img src="assets/images/close.png" alt=""></button>
     </div>

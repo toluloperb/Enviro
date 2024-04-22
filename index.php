@@ -194,10 +194,9 @@
                 {
                     ?>
                         <?php $session_id = rand(000000, 999999) ?>
-                        <input type="text" id="session_id" name="session_id" value="<?= $session_id ?>" hidden>
-                        <div class="mobile_chat_btn " id="mobile_chat_btn">
+                        <a href="?id=<?= $session_id ?>"><div class="mobile_chat_btn " id="">
                             <img src="assets/images/chat.png" id="show_chat_info">
-                        </div>
+                        </div></a>
                     <?php
                 }
             ?>
@@ -212,7 +211,7 @@
         </div>
 
         <section class="backdrop" id="backdrop">
-        <video class="elementor-video" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
+            <video class="" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
         </section>
 
         <section class="explore_prop">
