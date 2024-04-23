@@ -626,16 +626,16 @@ hr {
 
     #stick_livechat {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         background: var(--main);
         /* position: -webkit-sticky; */
         position: fixed;
-        top: 8.3%;
+        top: 0%;
         left: 0%;
         bottom: 10%;
         z-index: 0;
         display: none;
-        border-radius: 10px;
+        border-radius: 0px;
         -webkit-backface-visibility: hidden;
         padding: 0;
     }
@@ -773,12 +773,17 @@ hr {
 @media only screen and (max-width: 720px) {
     .chat_tools {
         width: 100% !important;
+        height: auto !important;
     }
 
     #chat_history_mobile {
         overflow: none !important;
         overflow-y:auto !important;
         overflow-x:hidden !important;
+    }
+
+    .chat_history {
+        height: 100% !important;
     }
 }
 
@@ -1415,4 +1420,11 @@ footer p {
         margin-left: 0%;
         width: 100%;
     }
+}
+
+.coverdiv {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
 }
