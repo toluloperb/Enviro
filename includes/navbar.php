@@ -10,7 +10,7 @@
             <a class="links" href="index#clients">Clients</a>
             <a class="links" href="">Careers</a>
             <a class="links" href="contact">Contact us</a>
-            <a class="links" href="">About us</a>
+            <a class="links" href="about">About us</a>
         </li>
     </div>
 </section>
@@ -33,6 +33,6 @@
         <a href="index#clients">Clients</a>
         <a href="">Careers</a>
         <a href="contact">Contact us</a>
-        <a href="">About us</a>
+        <a href="about">About us</a>
     </li>
 </div>
