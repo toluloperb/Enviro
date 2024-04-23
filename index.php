@@ -211,9 +211,7 @@
         </div>
 
         <section class="backdrop" id="backdrop">
-            <video class="" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload">
-                <div class="coverdiv"></div>
-            </video>
+            <video class="" src="https://cariandbritt.com/wp-content/uploads/2022/05/cari__britt-low-720p.mp4" autoplay="" loop="" muted="muted" playsinline="" controlsList="nodownload"></video>
         </section>
 
         <section class="explore_prop">

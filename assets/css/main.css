@@ -152,6 +152,7 @@ li a:last-child {
         padding-top: 30px;
         padding-bottom: 60px;
         background-color: var(--main);
+        z-index: 1;
     }
     
     .mobile_list li {
@@ -182,6 +183,8 @@ li a:last-child {
 .backdrop video {
     width: 100%;
     height: fit-content;
+    object-fit: cover;
+    z-index: 0;
 }
 
 .explore_prop {
