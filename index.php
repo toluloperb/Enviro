@@ -184,17 +184,16 @@
                     $id = $_GET["id"];
 
                     ?>
-                        <input type="text" id="session_id" name="session_id" value="<?= $id ?>" hidden>
-                        <div class="mobile_chat_btn " id="mobile_chat_btn">
-                                <img src="assets/images/chat.png" id="show_chat_info">
-                        </div>
+                        <a href="live-chat?id=<?= $id ?>"><div class="mobile_chat_btn " id="">
+                            <img src="assets/images/chat.png" id="show_chat_info">
+                        </div></a>
                     <?php
                 }
                 else 
                 {
                     ?>
                         <?php $session_id = rand(000000, 999999) ?>
-                        <a href="?id=<?= $session_id ?>"><div class="mobile_chat_btn " id="">
+                        <a href="live-chat?id=<?= $session_id ?>"><div class="mobile_chat_btn " id="">
                             <img src="assets/images/chat.png" id="show_chat_info">
                         </div></a>
                     <?php
