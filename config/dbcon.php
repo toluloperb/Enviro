@@ -6,9 +6,9 @@
     $database = "manorrealtors";
 
     // $host = "localhost";
-    // $username = "manojlmu_manorrealtor";
+    // $username = "alphonzt_manorrealtors";
     // $password = "Trodpen2022*";
-    // $database = "manojlmu_manorrealtor";
+    // $database = "alphonzt_manorrealtors";
 
     $con = mysqli_connect($host, $username, $password, $database);
 

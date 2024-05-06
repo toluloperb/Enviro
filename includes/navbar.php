@@ -7,7 +7,7 @@
                 <div class="desktopNav">
                     <li>
                         <a class="links" href="index?id=<?= $id ?>">Home</a>
-                        <a class="links" href="products?id=<?= $id ?>">Our services</a>
+                        <a class="links" href="services?id=<?= $id ?>">Our services</a>
                         <a class="links" href="news?id=<?= $id ?>">News</a>
                         <a class="links" href="">Buy &amp; Sell</a>
                         <a id="whiteLogo" href="index?id=<?= $id ?>"><img style="height: 40px" src="assets/images/manor-logo-white.png" alt=""></a>
@@ -32,7 +32,7 @@
             <div class="mobile_list" id="mobile_lists">
                 <li>
                     <a href="index?id=<?= $id ?>">Home</a>
-                    <a href="products?id=<?= $id ?>">Our services</a>
+                    <a href="services?id=<?= $id ?>">Our services</a>
                     <a href="news?id=<?= $id ?>">News</a>
                     <a href="">Buy &amp; Sell</a>
                     <a href="index#clients?id=<?= $id ?>">Clients</a>
@@ -50,7 +50,7 @@
                 <div class="desktopNav">
                     <li>
                         <a class="links" href="index">Home</a>
-                        <a class="links" href="products">Our services</a>
+                        <a class="links" href="services">Our services</a>
                         <a class="links" href="news">News</a>
                         <a class="links" href="">Buy &amp; Sell</a>
                         <a id="whiteLogo" href="index"><img style="height: 40px" src="assets/images/manor-logo-white.png" alt=""></a>
@@ -75,7 +75,7 @@
             <div class="mobile_list" id="mobile_lists">
                 <li>
                     <a href="index">Home</a>
-                    <a href="products">Our services</a>
+                    <a href="services">Our services</a>
                     <a href="news">News</a>
                     <a href="">Buy &amp; Sell</a>
                     <a href="index#clients">Clients</a>
